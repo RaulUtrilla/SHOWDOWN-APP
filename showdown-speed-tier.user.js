@@ -642,6 +642,7 @@
       state.pkmnData[key] = {
         side,
         name,
+        level: 100,
         speedBoost: 0,
         status: null,
         ability: null,
@@ -667,6 +668,14 @@
       .replace(/^-|-$/g, '');
   }
 
+  // Separa "Pikachu L93" → { name: 'Pikachu', level: 93 }.
+  // Showdown solo añade el sufijo "L<nivel>" cuando el nivel no es 100.
+  function parseNameAndLevel(rawText) {
+    const m = String(rawText).trim().match(/^(.*?)\s*L(\d{1,3})$/i);
+    if (m) return { name: m[1].trim(), level: parseInt(m[2], 10) };
+    return { name: String(rawText).trim(), level: 100 };
+  }
+
   function getBaseSpeed(name) {
     const key = normalizeName(name);
     if (SPEED_DATA[key] !== undefined) return SPEED_DATA[key];
@@ -677,11 +686,18 @@
 
   // ═══════════════════════════════════════════════════════════════════════════
   // CÁLCULO DE VELOCIDAD EFECTIVA (Feature 1)
-  // Fórmula: base × boost × tailwind × weather × status
+  // Fórmula: stat_a_nivel(base, nivel) × boost × tailwind × weather × status
   // ═══════════════════════════════════════════════════════════════════════════
   function calcEffectiveSpeed(entry) {
     const base = getBaseSpeed(entry.name);
     if (base === null) return { speed: null, unknown: false };
+
+    // Estadística de Velocidad real al nivel del Pokémon, asumiendo IV 31,
+    // 0 EVs y naturaleza neutra (estimación mínima, ya que los EVs/naturaleza
+    // del rival no son visibles). Esto es mucho más preciso que usar la
+    // velocidad base sin escalar por nivel.
+    const level = entry.level || 100;
+    const statAtLevel = Math.floor((2 * base + 31) * level / 100) + 5;
 
     // Boost total (incluye Speed Boost stacks acumulados)
     const totalBoost = Math.max(-6, Math.min(6,
@@ -722,7 +738,7 @@
     // Parálisis: ×0.5
     const statusMult = entry.status === 'par' ? 0.5 : 1;
 
-    const speed = Math.floor(base * boostMult * tailwindMult * weatherMult * statusMult);
+    const speed = Math.floor(statAtLevel * boostMult * tailwindMult * weatherMult * statusMult);
     return { speed, unknown };
   }
 
@@ -941,8 +957,10 @@
     if (lbar) {
       const nameEl = lbar.querySelector('strong');
       if (nameEl) {
-        state.playerName = nameEl.textContent.trim();
+        const { name, level } = parseNameAndLevel(nameEl.textContent);
+        state.playerName = name;
         const e = getPkmnEntry('p1', state.playerName);
+        e.level = level;
         const statusEl = lbar.querySelector('.status');
         if (statusEl && statusEl.textContent.trim()) {
           e.status = statusEl.textContent.trim().toLowerCase().slice(0, 3);
@@ -953,8 +971,10 @@
     if (rbar) {
       const nameEl = rbar.querySelector('strong');
       if (nameEl) {
-        state.opponentName = nameEl.textContent.trim();
+        const { name, level } = parseNameAndLevel(nameEl.textContent);
+        state.opponentName = name;
         const e = getPkmnEntry('p2', state.opponentName);
+        e.level = level;
         const statusEl = rbar.querySelector('.status');
         if (statusEl && statusEl.textContent.trim()) {
           e.status = statusEl.textContent.trim().toLowerCase().slice(0, 3);
@@ -1032,6 +1052,12 @@
     // Condiciones de campo (Feature 2)
     if (cfg.showConditions) html += renderConditions();
 
+    // Aviso: la velocidad es una estimación (IV 31, 0 EVs, naturaleza neutra)
+    html += `
+      <div style="padding:3px 12px 5px;font-size:9px;color:#555;line-height:1.2;">
+        Vel. estimada (IV 31, 0 EVs, neutra)
+      </div>`;
+
     html += `</div>`;
     return html;
   }
@@ -1043,12 +1069,12 @@
     if (state.playerName) {
       const e = getPkmnEntry('p1', state.playerName);
       const { speed, unknown } = calcEffectiveSpeed(e);
-      entries.push({ name: state.playerName, side: 'p1', speed, unknown, entry: e });
+      entries.push({ name: state.playerName, level: e.level, side: 'p1', speed, unknown, entry: e });
     }
     if (state.opponentName) {
       const e = getPkmnEntry('p2', state.opponentName);
       const { speed, unknown } = calcEffectiveSpeed(e);
-      entries.push({ name: state.opponentName, side: 'p2', speed, unknown, entry: e });
+      entries.push({ name: state.opponentName, level: e.level, side: 'p2', speed, unknown, entry: e });
     }
 
     // Ordenar: mayor primero (Trick Room invierte → menor primero)
@@ -1092,6 +1118,7 @@
                     padding:4px 12px;line-height:1.3;">
           <span style="display:flex;align-items:center;gap:2px;">
             ${trMark}<span style="color:${nameColor};font-weight:500;">${e.name}</span>${modIcon}
+            <span style="color:#666;font-size:9px;margin-left:2px;">Lv.${e.level}</span>
           </span>
           ${speedStr}
         </div>`;
