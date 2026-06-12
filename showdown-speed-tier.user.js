@@ -10,7 +10,6 @@
 // ==/UserScript==
 
 (function () {
-  'use strict';
 
   // ═══════════════════════════════════════════════════════════════════════════
   // BASE DE DATOS DE VELOCIDADES BASE — Gen 9 Random Battles
