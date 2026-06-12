@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teambuilder Assistant</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header class="tba-header">
+    <h1>📋 Teambuilder Assistant</h1>
+  </header>
+
+  <div class="tba-controls">
+    <select id="tba-format" aria-label="Formato"></select>
+    <input id="tba-search" type="search" placeholder="Buscar por especie, autor, arquetipo…" />
+  </div>
+
+  <div id="tba-status" class="tba-status"></div>
+
+  <main id="tba-list" class="tba-list"></main>
+
+  <footer class="tba-footer">
+    <span id="tba-count"></span>
+  </footer>
+
+  <script src="../shared/formats.js"></script>
+  <script src="../shared/teamparser.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

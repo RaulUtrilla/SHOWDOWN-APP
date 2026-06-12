@@ -1,0 +1,229 @@
+:root {
+  color-scheme: dark;
+  --bg: #15171c;
+  --bg-card: #1f2229;
+  --bg-elev: #262a33;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e8e8ea;
+  --text-dim: #9aa0ab;
+  --accent: #5b9dff;
+  --accent-2: #ff8f8f;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.4 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.tba-header {
+  padding: 10px 12px 6px;
+}
+.tba-header h1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.tba-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 12px 8px;
+}
+.tba-controls select,
+.tba-controls input {
+  width: 100%;
+  background: var(--bg-elev);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+.tba-controls select:focus,
+.tba-controls input:focus {
+  outline: 1px solid var(--accent);
+}
+
+.tba-status {
+  padding: 0 12px;
+  color: var(--accent-2);
+  font-size: 11px;
+  min-height: 0;
+}
+.tba-status:empty { display: none; }
+
+.tba-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 12px 12px;
+}
+
+.tba-empty {
+  color: var(--text-dim);
+  font-style: italic;
+  padding: 18px 4px;
+  text-align: center;
+  line-height: 1.6;
+}
+.tba-empty code {
+  background: var(--bg-elev);
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.tba-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.tba-card-header { margin-bottom: 4px; }
+.tba-card-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+.tba-card-title strong {
+  font-size: 13px;
+  color: var(--text);
+}
+.tba-card-format {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--accent);
+  background: rgba(91, 157, 255, 0.12);
+  border-radius: 4px;
+  padding: 1px 5px;
+  white-space: nowrap;
+}
+.tba-card-meta {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 1px;
+}
+.tba-card-desc {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+.tba-sprites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 6px 0 4px;
+}
+.tba-sprite {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-elev);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.tba-sprite img {
+  max-width: 100%;
+  max-height: 100%;
+  image-rendering: pixelated;
+}
+
+.tba-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 2px 0 6px;
+}
+.tba-tag {
+  font-size: 10px;
+  color: var(--text-dim);
+  background: var(--bg-elev);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+.tba-card-tags:empty { margin: 0; }
+
+.tba-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tba-btn {
+  flex: 1 1 auto;
+  min-width: 64px;
+  background: var(--bg-elev);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 11.5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.tba-btn:hover { border-color: var(--accent); }
+.tba-btn:disabled { opacity: 0.6; cursor: default; }
+.tba-btn-ghost { background: transparent; }
+.tba-btn-primary {
+  background: var(--accent);
+  color: #0b1320;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.tba-btn-primary:hover { filter: brightness(1.08); }
+
+.tba-details {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+.tba-set {
+  background: var(--bg-elev);
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+.tba-set-title {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.tba-set-line {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin: 1px 0;
+}
+.tba-set-moves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.tba-move {
+  font-size: 10.5px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+
+.tba-footer {
+  padding: 4px 12px 10px;
+  color: var(--text-dim);
+  font-size: 10.5px;
+  text-align: right;
+}
