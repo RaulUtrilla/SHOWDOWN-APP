@@ -647,7 +647,6 @@
         status: null,
         ability: null,
         unburden: false,
-        slowStartTurns: 5,
         speedBoostStacks: 0,
         turnEntered: 0,
       };
@@ -708,7 +707,9 @@
       if ((abilityKey === 'quick feet' || abilityKey === 'quickfeet') && entry.status) {
         weatherMult *= 1.5;
       }
-      if ((abilityKey === 'slow start' || abilityKey === 'slowstart') && entry.slowStartTurns > 0) {
+      // Slow Start: ×0.5 durante los primeros 5 turnos desde que entró en combate
+      if ((abilityKey === 'slow start' || abilityKey === 'slowstart')
+          && (state.currentTurn - entry.turnEntered) < 5) {
         weatherMult *= 0.5;
       }
       if (abilityKey === 'unburden' && entry.unburden) {
@@ -864,42 +865,50 @@
       }
 
       // ── Trick Room ─────────────────────────────────────────────────────
-      if (/trick room was set up/i.test(lower)) {
+      // Inicio real: "[Pokémon] twisted the dimensions!"
+      // Fin real:    "The twisted dimensions returned to normal!"
+      if (/twisted the dimensions/i.test(lower)) {
         state.trickRoom = true; state.trickRoomTurns = 5;
-      } else if (/trick room.*disappeared|twisted dimensions returned|the trick room/i.test(lower) && !/set up/i.test(lower)) {
+      } else if (/twisted dimensions returned to normal/i.test(lower)) {
         state.trickRoom = false; state.trickRoomTurns = 0;
       }
 
       // ── Tailwind ───────────────────────────────────────────────────────
-      if (/whipped up a tailwind/i.test(lower)) {
-        if (/^the opposing/i.test(line)) state.opponentTailwind = 4;
+      // Inicio real: "The tailwind blew from behind your/the opposing team!"
+      // Fin real:    "...tailwind petered out!"
+      // El lado se determina por la presencia de "opposing"/"foe" en la línea.
+      if (/tailwind blew from behind/i.test(lower)) {
+        if (/opposing|foe/i.test(lower)) state.opponentTailwind = 4;
         else state.playerTailwind = 4;
       }
-      if (/tailwind.*faded|tailwind petered out/i.test(lower)) {
-        // Showdown indica qué lado: "The opposing team's tailwind" / "Your team's tailwind"
-        if (/opposing/i.test(lower)) state.opponentTailwind = 0;
+      if (/tailwind petered out/i.test(lower)) {
+        if (/opposing|foe/i.test(lower)) state.opponentTailwind = 0;
         else state.playerTailwind = 0;
       }
 
       // ── Hazards ────────────────────────────────────────────────────────
+      // "Pointed stones float in the air around your/the opposing team!"
       if (/pointed stones? float/i.test(lower)) {
-        if (/opposing/i.test(lower)) state.opponentSR = true; else state.playerSR = true;
+        if (/opposing|foe/i.test(lower)) state.opponentSR = true; else state.playerSR = true;
       }
       if (/pointed stones? disappeared/i.test(lower)) {
-        if (/opposing/i.test(lower)) state.opponentSR = false; else state.playerSR = false;
+        if (/opposing|foe/i.test(lower)) state.opponentSR = false; else state.playerSR = false;
       }
-      if (/spikes? were scattered/i.test(lower)) {
-        if (/opposing/i.test(lower)) state.opponentSpikes = Math.min(3, state.opponentSpikes + 1);
+      // "Spikes were scattered all around the feet of your/the opposing team!"
+      // (excluye "Toxic Spikes" / "Poison spikes", que no afectan velocidad)
+      if (/spikes were scattered/i.test(lower) && !/toxic|poison/i.test(lower)) {
+        if (/opposing|foe/i.test(lower)) state.opponentSpikes = Math.min(3, state.opponentSpikes + 1);
         else state.playerSpikes = Math.min(3, state.playerSpikes + 1);
       }
-      if (/the spikes? disappeared/i.test(lower)) {
-        if (/opposing/i.test(lower)) state.opponentSpikes = 0; else state.playerSpikes = 0;
+      if (/the spikes disappeared/i.test(lower) && !/toxic|poison/i.test(lower)) {
+        if (/opposing|foe/i.test(lower)) state.opponentSpikes = 0; else state.playerSpikes = 0;
       }
-      if (/a sticky web/i.test(lower)) {
-        if (/opposing/i.test(lower)) state.opponentWeb = true; else state.playerWeb = true;
+      // "A sticky web has been laid out beneath your/the opposing team's feet!"
+      if (/sticky web/i.test(lower) && !/disappeared/i.test(lower)) {
+        if (/opposing|foe/i.test(lower)) state.opponentWeb = true; else state.playerWeb = true;
       }
       if (/sticky web.*disappeared/i.test(lower)) {
-        if (/opposing/i.test(lower)) state.opponentWeb = false; else state.playerWeb = false;
+        if (/opposing|foe/i.test(lower)) state.opponentWeb = false; else state.playerWeb = false;
       }
 
       // ── Feature 5: Detección de abilities de velocidad ─────────────────
