@@ -26,8 +26,8 @@ en **construir equipos**, y convive perfectamente con Showdex.
 
 1. Abre `https://play.pokemonshowdown.com` y entra en el **Teambuilder**.
 2. Abre el side panel de la extensión (icono en la barra de herramientas).
-3. Elige un **formato** (Gen 9 OU, Ubers, UU, RU, NU, Monotype, Doubles OU,
-   National Dex, o "Todos los formatos").
+3. Elige un **formato** (Gen 9 OU, Ubers, UU, RU, NU, PU, LC, Monotype,
+   Doubles OU, National Dex, o "Todos los formatos").
 4. Usa el buscador para filtrar por **especie, autor o arquetipo** (p. ej.
    escribe "Kingambit" para ver equipos que lo incluyan).
 5. En cada equipo:

@@ -14,6 +14,34 @@
     "export": "Darkrai @ Expert Belt\nAbility: Bad Dreams\nTera Type: Poison\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Dark Pulse\n- Focus Blast\n- Ice Beam\n- Sludge Bomb\n\nEnamorus @ Choice Scarf\nAbility: Contrary\nTera Type: Ground\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Earth Power\n- Healing Wish\n- Moonblast\n- Mystical Fire\n\nGlimmora (M) @ Red Card\nAbility: Toxic Debris\nTera Type: Ghost\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Earth Power\n- Mortal Spin\n- Power Gem\n- Stealth Rock\n\nKingambit (M) @ Air Balloon\nAbility: Supreme Overlord\nTera Type: Fire\nEVs: 112 HP / 252 Atk / 144 Spe\nAdamant Nature\n- Iron Head\n- Kowtow Cleave\n- Sucker Punch\n- Swords Dance\n\nRoaring Moon @ Booster Energy\nAbility: Protosynthesis\nTera Type: Flying\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Acrobatics\n- Dragon Dance\n- Knock Off\n- Taunt\n\nZamazenta @ Leftovers\nAbility: Dauntless Shield\nTera Type: Ghost\nEVs: 16 HP / 216 Def / 40 SpD / 236 Spe\nImpish Nature\n- Body Press\n- Heavy Slam\n- Iron Defense\n- Roar"
   },
   {
+    "id": "gen9ou-mana-webs",
+    "format": "gen9ou",
+    "name": "~ mana webs",
+    "author": "FlamingVictini",
+    "source": "https://data.pkmn.cc/teams/gen9ou.json",
+    "description": "Balance especial con Ribombee (Sticky Web) para acelerar a Manaphy y Roaring Moon, apoyado por Gholdengo/Zamazenta como núcleo defensivo.",
+    "tags": [
+      "balance",
+      "sticky web",
+      "manaphy"
+    ],
+    "export": "Ribombee (M) @ Focus Sash\nAbility: Shield Dust\nTera Type: Ghost\nEVs: 8 HP / 136 Def / 196 SpA / 168 Spe\nTimid Nature\n- Moonblast\n- Psychic Noise\n- Sticky Web\n- Stun Spore\n\nGholdengo @ Air Balloon\nAbility: Good as Gold\nTera Type: Fairy\nEVs: 248 HP / 16 Def / 72 SpA / 172 Spe\nModest Nature\n- Hex\n- Make It Rain\n- Recover\n- Thunder Wave\n\nGlimmora (M) @ Power Herb\nAbility: Toxic Debris\nTera Type: Fairy\nEVs: 16 Def / 240 SpA / 252 Spe\nModest Nature\n- Dazzling Gleam\n- Earth Power\n- Meteor Beam\n- Sludge Bomb\n\nManaphy @ Leftovers\nAbility: Hydration\nTera Type: Fairy\nEVs: 112 HP / 216 SpA / 180 Spe\nModest Nature\n- Acid Armor\n- Stored Power\n- Surf\n- Tail Glow\n\nRoaring Moon @ Booster Energy\nAbility: Protosynthesis\nTera Type: Flying\nEVs: 252 Atk / 4 Def / 252 Spe\nAdamant Nature\n- Acrobatics\n- Dragon Dance\n- Earthquake\n- Knock Off\n\nZamazenta @ Mirror Herb\nAbility: Dauntless Shield\nTera Type: Fire\nEVs: 8 HP / 60 Atk / 252 Def / 188 Spe\nJolly Nature\n- Body Press\n- Iron Defense\n- Iron Head\n- Stone Edge"
+  },
+  {
+    "id": "gen9ou-safari-zone",
+    "format": "gen9ou",
+    "name": "The Safari Zone",
+    "author": "barracades",
+    "source": "https://data.pkmn.cc/teams/gen9ou.json",
+    "description": "Balance ofensivo con Raging Bolt e Iron Valiant como wallbreakers especiales/físicos, Kingambit de cierre y Rillaboom de Grassy Terrain (varios shiny).",
+    "tags": [
+      "balance",
+      "raging bolt",
+      "kingambit"
+    ],
+    "export": "Iron Moth @ Booster Energy\nAbility: Quark Drive\nShiny: Yes\nTera Type: Ghost\nEVs: 124 Def / 132 SpA / 252 Spe\nTimid Nature\n- Fiery Dance\n- Psychic\n- Sludge Wave\n- Substitute\n\nIron Valiant @ Booster Energy\nAbility: Quark Drive\nShiny: Yes\nTera Type: Ghost\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Calm Mind\n- Moonblast\n- Shadow Ball\n- Substitute\n\nKingambit (M) @ Lum Berry\nAbility: Supreme Overlord\nShiny: Yes\nTera Type: Dark\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Iron Head\n- Kowtow Cleave\n- Sucker Punch\n- Swords Dance\n\nOgerpon-Cornerstone @ Cornerstone Mask\nAbility: Sturdy\nTera Type: Rock\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Ivy Cudgel\n- Power Whip\n- Spikes\n- Taunt\n\nRaging Bolt @ Booster Energy\nAbility: Protosynthesis\nTera Type: Water\nEVs: 252 SpA / 4 SpD / 252 Spe\nModest Nature\nIVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe\n- Calm Mind\n- Dragon Pulse\n- Tera Blast\n- Thunderclap\n\nRillaboom (M) @ Choice Band\nAbility: Grassy Surge\nShiny: Yes\nTera Type: Grass\nEVs: 252 Atk / 4 Def / 252 Spe\nAdamant Nature\n- Grassy Glide\n- Knock Off\n- U-turn\n- Wood Hammer"
+  },
+  {
     "id": "gen9ou-prime-pult",
     "format": "gen9ou",
     "name": "Prime Pult",
@@ -26,6 +54,20 @@
       "kingambit"
     ],
     "export": "Dragapult (M) @ Choice Band\nAbility: Clear Body\nShiny: Yes\nTera Type: Ghost\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Dragon Darts\n- Quick Attack\n- Tera Blast\n- U-turn\n\nIron Crown @ Assault Vest\nAbility: Quark Drive\nTera Type: Fighting\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\nIVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe\n- Focus Blast\n- Future Sight\n- Tachyon Cutter\n- Volt Switch\n\nKingambit (M) @ Leftovers\nAbility: Supreme Overlord\nTera Type: Ghost\nEVs: 208 HP / 252 Atk / 48 Spe\nAdamant Nature\n- Iron Head\n- Kowtow Cleave\n- Sucker Punch\n- Swords Dance\n\nLandorus-Therian @ Rocky Helmet\nAbility: Intimidate\nTera Type: Water\nEVs: 252 HP / 252 Def / 4 Spe\nBold Nature\n- Earth Power\n- Grass Knot\n- Stealth Rock\n- U-turn\n\nPrimarina (M) @ Heavy-Duty Boots\nAbility: Torrent\nTera Type: Fairy\nEVs: 248 HP / 80 SpA / 180 Spe\nModest Nature\n- Calm Mind\n- Moonblast\n- Psychic Noise\n- Surf\n\nSamurott-Hisui (M) @ Heavy-Duty Boots\nAbility: Sharpness\nTera Type: Fire\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Ceaseless Edge\n- Encore\n- Knock Off\n- Razor Shell"
+  },
+  {
+    "id": "gen9ou-ogerpon-tinglu-fat",
+    "format": "gen9ou",
+    "name": "Ogerpon Tinglu Fat",
+    "author": "Punny",
+    "source": "https://data.pkmn.cc/teams/gen9ou.json",
+    "description": "Stall/balance pesado con Ting-Lu y Garganacl como muros físicos, Gholdengo como wall especial y Deoxys-Speed para hazards rápidos.",
+    "tags": [
+      "stall",
+      "ting-lu",
+      "garganacl"
+    ],
+    "export": "Gholdengo @ Heavy-Duty Boots\nAbility: Good as Gold\nTera Type: Fairy\nEVs: 252 HP / 248 Def / 8 Spe\nBold Nature\n- Focus Blast\n- Hex\n- Recover\n- Thunder Wave\n\nDeoxys-Speed @ Heavy-Duty Boots\nAbility: Pressure\nTera Type: Fighting\nEVs: 200 Atk / 252 SpA / 56 Spe\nNaive Nature\n- Ice Beam\n- Knock Off\n- Psycho Boost\n- Superpower\n\nGarganacl (M) @ Leftovers\nAbility: Purifying Salt\nTera Type: Water\nEVs: 252 HP / 176 Def / 80 SpD\nImpish Nature\n- Protect\n- Recover\n- Salt Cure\n- Stealth Rock\n\nGliscor (M) @ Toxic Orb\nAbility: Poison Heal\nTera Type: Water\nEVs: 244 HP / 12 Def / 252 SpD\nCareful Nature\nIVs: 28 Spe\n- Earthquake\n- Protect\n- Toxic\n- U-turn\n\nOgerpon @ Heavy-Duty Boots\nAbility: Defiant\nTera Type: Grass\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Encore\n- Ivy Cudgel\n- Knock Off\n- U-turn\n\nTing-Lu @ Heavy-Duty Boots\nAbility: Vessel of Ruin\nTera Type: Water\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Earthquake\n- Ruination\n- Spikes\n- Whirlwind"
   },
   {
     "id": "gen9uu-dual-steel",
@@ -42,6 +84,20 @@
     "export": "Excadrill (M) @ Leftovers\nAbility: Mold Breaker\nTera Type: Fairy\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Earthquake\n- Rapid Spin\n- Rock Slide\n- Swords Dance\n\nCobalion @ Leftovers\nAbility: Justified\nTera Type: Fairy\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Stealth Rock\n- Thunder Wave\n- Volt Switch\n\nHydrapple (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Steel\nEVs: 248 HP / 184 Def / 76 Spe\nBold Nature\n- Draco Meteor\n- Earth Power\n- Giga Drain\n- Nasty Plot\n\nLatios @ Leftovers\nAbility: Levitate\nTera Type: Steel\nEVs: 4 Def / 252 SpA / 252 Spe\nTimid Nature\n- Calm Mind\n- Draco Meteor\n- Recover\n- Thunderbolt\n\nLokix (M) @ Heavy-Duty Boots\nAbility: Tinted Lens\nTera Type: Bug\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- First Impression\n- Knock Off\n- Sucker Punch\n- U-turn\n\nTornadus-Therian @ Assault Vest\nAbility: Regenerator\nTera Type: Electric\nEVs: 208 HP / 124 SpD / 176 Spe\nTimid Nature\n- Bleakwind Storm\n- Knock Off\n- Sludge Bomb\n- U-turn"
   },
   {
+    "id": "gen9uu-band-gross-sand",
+    "format": "gen9uu",
+    "name": "Band Gross Sand",
+    "author": "wind of schilt",
+    "source": "https://data.pkmn.cc/teams/gen9uu.json",
+    "description": "Balance con Tyranitar (Sand Stream) y Excadrill como dúo de arena, Metagross (Choice Band) como wallbreaker físico y Hydrapple/Tornadus-Therian de soporte.",
+    "tags": [
+      "sand",
+      "metagross",
+      "tyranitar"
+    ],
+    "export": "Tyranitar (M) @ Leftovers\nAbility: Sand Stream\nTera Type: Ghost\nEVs: 240 HP / 64 Atk / 184 SpD / 20 Spe\nAdamant Nature\n- Earthquake\n- Knock Off\n- Stealth Rock\n- Stone Edge\n\nExcadrill (M) @ Air Balloon\nAbility: Sand Rush\nTera Type: Ghost\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Earthquake\n- Iron Head\n- Rapid Spin\n- Swords Dance\n\nHydrapple (M) @ Rocky Helmet\nAbility: Regenerator\nTera Type: Fairy\nEVs: 248 HP / 252 Def / 8 Spe\nBold Nature\n- Earth Power\n- Fickle Beam\n- Nasty Plot\n- Recover\n\nMetagross @ Choice Band\nAbility: Clear Body\nTera Type: Steel\nEVs: 40 HP / 252 Atk / 216 Spe\nAdamant Nature\n- Bullet Punch\n- Heavy Slam\n- Knock Off\n- Psychic Fangs\n\nRotom-Wash @ Leftovers\nAbility: Levitate\nTera Type: Fairy\nEVs: 248 HP / 252 Def / 8 SpD\nBold Nature\nIVs: 30 Spe\n- Hydro Pump\n- Pain Split\n- Volt Switch\n- Will-O-Wisp\n\nTornadus-Therian @ Assault Vest\nAbility: Regenerator\nTera Type: Water\nEVs: 232 HP / 104 SpD / 172 Spe\nTimid Nature\n- Bleakwind Storm\n- Focus Blast\n- Knock Off\n- U-turn"
+  },
+  {
     "id": "gen9uu-mamo-hazard-stack",
     "format": "gen9uu",
     "name": "UU Mamo Hazard Stack",
@@ -53,6 +109,34 @@
       "mamoswine"
     ],
     "export": "Mamoswine (M) @ Heavy-Duty Boots\nAbility: Thick Fat\nTera Type: Grass\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Earthquake\n- Ice Shard\n- Icicle Crash\n- Trailblaze\n\nCobalion @ Leftovers\nAbility: Justified\nTera Type: Flying\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Heavy Slam\n- Stealth Rock\n- Volt Switch\n\nOgerpon @ Heavy-Duty Boots\nAbility: Defiant\nTera Type: Grass\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Encore\n- Ivy Cudgel\n- Knock Off\n- U-turn\n\nSandy Shocks @ Heavy-Duty Boots\nAbility: Protosynthesis\nTera Type: Ground\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Earth Power\n- Power Gem\n- Spikes\n- Volt Switch\n\nSlowking (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Fairy\nEVs: 252 HP / 172 Def / 84 SpD\nSassy Nature\n- Chilly Reception\n- Scald\n- Slack Off\n- Thunder Wave\n\nTornadus-Therian @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Steel\nEVs: 208 HP / 132 SpD / 168 Spe\nTimid Nature\n- Bleakwind Storm\n- Focus Blast\n- Knock Off\n- U-turn"
+  },
+  {
+    "id": "gen9uu-shocks-regenguys-kicks",
+    "format": "gen9uu",
+    "name": "shocks regenguys but with The Kicks",
+    "author": "Lily",
+    "source": "https://data.pkmn.cc/teams/gen9uu.json",
+    "description": "Balance con núcleo Regenerator (Hydrapple/Slowking/Tornadus-Therian) para mantener salud, Sandy Shocks de hazards y Lokix/Tinkaton como wallbreakers físicos.",
+    "tags": [
+      "balance",
+      "regenerator",
+      "sandy shocks"
+    ],
+    "export": "Sandy Shocks @ Heavy-Duty Boots\nAbility: Protosynthesis\nTera Type: Ice\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Earth Power\n- Spikes\n- Tera Blast\n- Volt Switch\n\nHydrapple (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Steel\nEVs: 248 HP / 176 Def / 84 SpA\nBold Nature\n- Draco Meteor\n- Earth Power\n- Giga Drain\n- Nasty Plot\n\nLokix (M) @ Heavy-Duty Boots\nAbility: Tinted Lens\nTera Type: Bug\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- First Impression\n- Knock Off\n- Sucker Punch\n- U-turn\n\nSlowking (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Fairy\nEVs: 252 HP / 240 Def / 16 SpD\nSassy Nature\n- Chilly Reception\n- Scald\n- Slack Off\n- Thunder Wave\n\nTinkaton @ Air Balloon\nAbility: Pickpocket\nTera Type: Flying\nEVs: 252 HP / 12 Atk / 180 Def / 64 SpD\nCareful Nature\n- Encore\n- Gigaton Hammer\n- Knock Off\n- Stealth Rock\n\nTornadus-Therian @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Steel\nEVs: 208 HP / 132 SpD / 168 Spe\nTimid Nature\n- Bleakwind Storm\n- Heat Wave\n- Knock Off\n- U-turn"
+  },
+  {
+    "id": "gen9uu-triple-regen-core-bo",
+    "format": "gen9uu",
+    "name": "Triple Regen Core BO",
+    "author": "Seraphz ⁂",
+    "source": "https://data.pkmn.cc/teams/gen9uu.json",
+    "description": "Bulky offense con triple núcleo Regenerator (Hydrapple/Slowking/Zapdos) y Mienshao/Mamoswine/Tinkaton como wallbreakers físicos rápidos.",
+    "tags": [
+      "bulky offense",
+      "regenerator",
+      "mamoswine"
+    ],
+    "export": "Mienshao (M) @ Choice Scarf\nAbility: Regenerator\nTera Type: Fighting\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Ice Spinner\n- Knock Off\n- U-turn\n\nHydrapple (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Steel\nEVs: 248 HP / 92 Def / 116 SpA / 32 SpD / 20 Spe\nModest Nature\n- Draco Meteor\n- Earth Power\n- Giga Drain\n- Nasty Plot\n\nMamoswine (M) @ Heavy-Duty Boots\nAbility: Thick Fat\nTera Type: Ice\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Earthquake\n- Ice Shard\n- Icicle Crash\n- Knock Off\n\nSlowking (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Fairy\nEVs: 252 HP / 252 Def / 4 SpD\nRelaxed Nature\n- Chilly Reception\n- Scald\n- Slack Off\n- Thunder Wave\n\nTinkaton @ Leftovers\nAbility: Pickpocket\nTera Type: Flying\nEVs: 252 HP / 160 Def / 96 SpD\nCareful Nature\n- Encore\n- Gigaton Hammer\n- Knock Off\n- Stealth Rock\n\nZapdos @ Heavy-Duty Boots\nAbility: Static\nTera Type: Steel\nEVs: 252 HP / 240 Def / 16 Spe\nBold Nature\n- Heat Wave\n- Hurricane\n- Roost\n- Volt Switch"
   },
   {
     "id": "gen9ru-barraskewda-pawmot-balance",
@@ -69,6 +153,62 @@
     "export": "Barraskewda (M) @ Mystic Water\nAbility: Swift Swim\nTera Type: Water\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Aqua Jet\n- Flip Turn\n- Liquidation\n- Psychic Fangs\n\nBrambleghast (M) @ Heavy-Duty Boots\nAbility: Wind Rider\nTera Type: Ghost\nEVs: 252 HP / 4 Atk / 252 Spe\nJolly Nature\n- Poltergeist\n- Power Whip\n- Rapid Spin\n- Strength Sap\n\nFezandipiti @ Heavy-Duty Boots\nAbility: Toxic Chain\nTera Type: Water\nEVs: 248 HP / 248 Def / 12 Spe\nBold Nature\n- Moonblast\n- Roost\n- Sludge Bomb\n- U-turn\n\nHippowdon (M) @ Heavy-Duty Boots\nAbility: Sand Stream\nTera Type: Water\nEVs: 252 HP / 4 Atk / 252 Def\nImpish Nature\n- Earthquake\n- Roar\n- Slack Off\n- Stealth Rock\n\nPawmot (M) @ Magnet\nAbility: Iron Fist\nTera Type: Electric\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Double Shock\n- Mach Punch\n- Seed Bomb\n\nUmbreon (M) @ Leftovers\nAbility: Synchronize\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCalm Nature\n- Foul Play\n- Protect\n- Toxic\n- Wish"
   },
   {
+    "id": "gen9ru-pawmot-mimikyu-bo",
+    "format": "gen9ru",
+    "name": "Pawmot + Red Card Mimikyu BO",
+    "author": "BpSnow_",
+    "source": "https://data.pkmn.cc/teams/gen9ru.json",
+    "description": "Bulky offense con Pawmot (Mach Punch/Double Shock) y Mimikyu (Red Card) como sweepers, apoyados por Hippowdon/Umbreon de control de hazards.",
+    "tags": [
+      "bulky offense",
+      "pawmot",
+      "mimikyu"
+    ],
+    "export": "Hippowdon (M) @ Rocky Helmet\nAbility: Sand Stream\nTera Type: Fairy\nEVs: 252 HP / 252 Def / 4 SpD\nImpish Nature\n- Earthquake\n- Slack Off\n- Stealth Rock\n- Whirlwind\n\nDiancie @ Leftovers\nAbility: Clear Body\nTera Type: Ghost\nEVs: 252 HP / 4 Atk / 252 SpD\nCareful Nature\n- Body Press\n- Diamond Storm\n- Encore\n- Spikes\n\nMimikyu (M) @ Red Card\nAbility: Disguise\nTera Type: Ghost\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Play Rough\n- Shadow Claw\n- Shadow Sneak\n- Swords Dance\n\nNoivern (M) @ Heavy-Duty Boots\nAbility: Infiltrator\nTera Type: Flying\nEVs: 200 HP / 56 SpA / 252 Spe\nTimid Nature\n- Defog\n- Draco Meteor\n- Roost\n- U-turn\n\nPawmot (M) @ Life Orb\nAbility: Natural Cure\nTera Type: Electric\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Double Shock\n- Mach Punch\n- Rest\n\nUmbreon (M) @ Leftovers\nAbility: Inner Focus\nTera Type: Poison\nEVs: 252 HP / 4 Def / 252 SpD\nCalm Nature\n- Foul Play\n- Protect\n- Toxic\n- Wish"
+  },
+  {
+    "id": "gen9ru-band-zoroark-balance",
+    "format": "gen9ru",
+    "name": "Band Zoroark Balance",
+    "author": "BpSnow_",
+    "source": "https://data.pkmn.cc/teams/gen9ru.json",
+    "description": "Balance con Zoroark-Hisui (Choice Band) como wallbreaker sorpresa, Thundurus de pivote especial y Milotic/Umbreon/Hippowdon como núcleo defensivo.",
+    "tags": [
+      "balance",
+      "zoroark",
+      "thundurus"
+    ],
+    "export": "Thundurus @ Heavy-Duty Boots\nAbility: Prankster\nTera Type: Ground\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Grass Knot\n- Nasty Plot\n- Sludge Bomb\n- Thunderbolt\n\nCyclizar (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Fairy\nEVs: 200 HP / 56 SpA / 252 Spe\nHasty Nature\n- Draco Meteor\n- Knock Off\n- Rapid Spin\n- U-turn\n\nHippowdon (M) @ Rocky Helmet\nAbility: Sand Force\nTera Type: Fairy\nEVs: 252 HP / 4 Atk / 252 Def\nImpish Nature\n- Earthquake\n- Slack Off\n- Stealth Rock\n- Whirlwind\n\nMilotic (M) @ Heavy-Duty Boots\nAbility: Marvel Scale\nTera Type: Dragon\nEVs: 200 HP / 56 Def / 252 SpD\nCalm Nature\n- Haze\n- Ice Beam\n- Recover\n- Scald\n\nUmbreon (M) @ Leftovers\nAbility: Inner Focus\nTera Type: Poison\nEVs: 252 HP / 4 Def / 252 SpD\nCalm Nature\n- Foul Play\n- Protect\n- Toxic\n- Wish\n\nZoroark-Hisui (M) @ Choice Band\nAbility: Illusion\nTera Type: Ghost\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Low Kick\n- Poltergeist\n- Shadow Sneak\n- U-turn"
+  },
+  {
+    "id": "gen9nu-specs-hoopa",
+    "format": "gen9nu",
+    "name": "specs hoopa",
+    "author": "Smogon Sample Teams",
+    "source": "https://data.pkmn.cc/teams/gen9nu.json",
+    "description": "Balance ofensivo con Hoopa (Choice Specs) como wallbreaker especial, Copperajah de soporte físico y Gligar/Florges como núcleo defensivo.",
+    "tags": [
+      "balance",
+      "hoopa",
+      "offense"
+    ],
+    "export": "Hoopa @ Choice Specs\nAbility: Magician\nTera Type: Psychic\nEVs: 4 Def / 252 SpA / 252 Spe\nTimid Nature\n- Focus Blast\n- Psyshock\n- Shadow Ball\n- Thunderbolt\n\nCopperajah (M) @ Leftovers\nAbility: Sheer Force\nTera Type: Dark\nEVs: 252 HP / 204 SpD / 52 Spe\nCareful Nature\n- Iron Head\n- Knock Off\n- Protect\n- Stealth Rock\n\nFlorges @ Leftovers\nAbility: Flower Veil\nTera Type: Grass\nEVs: 248 HP / 204 Def / 56 Spe\nBold Nature\n- Calm Mind\n- Moonblast\n- Protect\n- Wish\n\nGligar (M) @ Eviolite\nAbility: Immunity\nTera Type: Water\nEVs: 252 HP / 136 Def / 120 SpD\nRelaxed Nature\n- Earthquake\n- Spikes\n- Toxic\n- U-turn\n\nScyther (M) @ Heavy-Duty Boots\nAbility: Technician\nTera Type: Flying\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Defog\n- Dual Wingbeat\n- U-turn\n\nTatsugiri (M) @ Choice Scarf\nAbility: Storm Drain\nTera Type: Fairy\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Draco Meteor\n- Memento\n- Surf\n- Tera Blast"
+  },
+  {
+    "id": "gen9nu-cm-dudun-knock-salazzle",
+    "format": "gen9nu",
+    "name": "cm dudun knock salazzle",
+    "author": "Smogon Sample Teams",
+    "source": "https://data.pkmn.cc/teams/gen9nu.json",
+    "description": "Balance con Dudunsparce (Calm Mind) como win condition especial, Klefki para hazards/Spikes y Electrode-Hisui/Salazzle como wallbreakers rápidos.",
+    "tags": [
+      "balance",
+      "dudunsparce",
+      "calm mind"
+    ],
+    "export": "Dudunsparce (M) @ Heavy-Duty Boots\nAbility: Rattled\nTera Type: Ghost\nEVs: 252 HP / 252 Def / 4 SpA\nBold Nature\n- Boomburst\n- Calm Mind\n- Roost\n- Shadow Ball\n\nElectrode-Hisui @ Heavy-Duty Boots\nAbility: Static\nTera Type: Dark\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Foul Play\n- Leaf Storm\n- Thunderbolt\n- Volt Switch\n\nGligar (M) @ Eviolite\nAbility: Immunity\nTera Type: Water\nEVs: 252 HP / 136 Def / 120 SpD\nRelaxed Nature\n- Acrobatics\n- Earthquake\n- Stealth Rock\n- U-turn\n\nKlefki (M) @ Leftovers\nAbility: Prankster\nTera Type: Ghost\nEVs: 252 HP / 252 SpD / 4 Spe\nCareful Nature\n- Foul Play\n- Play Rough\n- Spikes\n- Thunder Wave\n\nSalazzle @ Heavy-Duty Boots\nAbility: Corrosion\nTera Type: Dark\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Encore\n- Flamethrower\n- Knock Off\n- Sludge Bomb\n\nScyther (M) @ Heavy-Duty Boots\nAbility: Technician\nTera Type: Flying\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Defog\n- Dual Wingbeat\n- Swords Dance\n- U-turn"
+  },
+  {
     "id": "gen9nu-meta-is-broken-s3",
     "format": "gen9nu",
     "name": "Meta is broken season 3",
@@ -81,6 +221,76 @@
       "offense"
     ],
     "export": "Scyther (M) @ Heavy-Duty Boots\nAbility: Technician\nShiny: Yes\nTera Type: Flying\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Defog\n- Dual Wingbeat\n- Swords Dance\n- U-turn\n\nBronzong @ Leftovers\nAbility: Heatproof\nTera Type: Fairy\nEVs: 252 HP / 196 SpD / 60 Spe\nCalm Nature\n- Body Press\n- Iron Defense\n- Psychic\n- Rest\n\nElectrode-Hisui @ Heavy-Duty Boots\nAbility: Static\nTera Type: Fairy\nEVs: 252 SpA / 4 SpD / 252 Spe\nModest Nature\n- Foul Play\n- Leaf Storm\n- Thunder Wave\n- Volt Switch\n\nGligar (M) @ Eviolite\nAbility: Immunity\nTera Type: Water\nEVs: 252 HP / 200 Def / 56 Spe\nImpish Nature\n- Earthquake\n- Knock Off\n- Stealth Rock\n- Toxic\n\nGoodra (M) @ Heavy-Duty Boots\nAbility: Sap Sipper\nTera Type: Steel\nEVs: 76 HP / 252 SpA / 180 Spe\nModest Nature\n- Draco Meteor\n- Flamethrower\n- Knock Off\n- Toxic\n\nHeracross (M) @ Flame Orb\nAbility: Guts\nTera Type: Normal\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Close Combat\n- Facade\n- Megahorn\n- Trailblaze"
+  },
+  {
+    "id": "gen9nu-new-sun-attempt",
+    "format": "gen9nu",
+    "name": "new sun attempt",
+    "author": "give me nu games",
+    "source": "https://data.pkmn.cc/teams/gen9nu.json",
+    "description": "Equipo de Sun (Volbeat con Drought) con Victreebel y Tauros-Paldea-Blaze como abusadores, y Jolteon/Goodra/Uxie de soporte especial.",
+    "tags": [
+      "sun",
+      "victreebel",
+      "volbeat"
+    ],
+    "export": "Uxie @ Heat Rock\nAbility: Levitate\nTera Type: Dark\nEVs: 252 HP / 4 SpA / 252 Spe\nTimid Nature\n- Future Sight\n- Memento\n- Stealth Rock\n- Sunny Day\n\nGoodra (M) @ Eject Pack\nAbility: Sap Sipper\nTera Type: Steel\nEVs: 80 HP / 252 SpA / 176 Spe\nModest Nature\n- Draco Meteor\n- Fire Blast\n- Knock Off\n- Sludge Bomb\n\nJolteon (M) @ Heavy-Duty Boots\nAbility: Volt Absorb\nTera Type: Ice\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Calm Mind\n- Tera Blast\n- Thunderbolt\n- Volt Switch\n\nTauros-Paldea-Blaze @ Choice Band\nAbility: Intimidate\nTera Type: Fighting\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Earthquake\n- Flare Blitz\n- Stone Edge\n\nVictreebel (M) @ Life Orb\nAbility: Chlorophyll\nTera Type: Water\nEVs: 252 SpA / 4 SpD / 252 Spe\nModest Nature\n- Growth\n- Sludge Bomb\n- Solar Beam\n- Weather Ball\n\nVolbeat @ Heat Rock\nAbility: Prankster\nTera Type: Ghost\nEVs: 252 HP / 4 Atk / 252 Def\nRelaxed Nature\n- Encore\n- Sunny Day\n- Thunder Wave\n- U-turn"
+  },
+  {
+    "id": "gen9monotype-electric",
+    "format": "gen9monotype",
+    "name": "(Electric)",
+    "author": "Neko",
+    "source": "https://data.pkmn.cc/teams/gen9monotype.json",
+    "description": "Monotype Eléctrico con Regieleki como sweeper ultrarrápido, Iron Hands como wallbreaker físico y Magnezone/Zapdos/Rotom-Wash de soporte.",
+    "tags": [
+      "monotype",
+      "electric",
+      "regieleki"
+    ],
+    "export": "Zapdos @ Heavy-Duty Boots\nAbility: Pressure\nTera Type: Electric\nEVs: 16 HP / 240 SpA / 252 Spe\nTimid Nature\n- Discharge\n- Hurricane\n- Roost\n- Substitute\n\nIron Hands @ Shuca Berry\nAbility: Quark Drive\nTera Type: Fighting\nEVs: 116 Def / 252 SpD / 140 Spe\nAdamant Nature\n- Drain Punch\n- Ice Punch\n- Swords Dance\n- Thunder Punch\n\nMagnezone @ Assault Vest\nAbility: Analytic\nTera Type: Electric\nEVs: 168 HP / 68 Def / 60 SpA / 204 SpD / 8 Spe\nModest Nature\n- Flash Cannon\n- Thunderbolt\n- Tri Attack\n- Volt Switch\n\nRegieleki @ Heavy-Duty Boots\nAbility: Transistor\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Rapid Spin\n- Thunderbolt\n- Thunder Wave\n- Volt Switch\n\nRotom-Wash @ Leftovers\nAbility: Levitate\nTera Type: Electric\nEVs: 212 HP / 48 Def / 248 Spe\nTimid Nature\n- Hydro Pump\n- Nasty Plot\n- Stored Power\n- Substitute\n\nSandy Shocks @ Choice Scarf\nAbility: Protosynthesis\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Earth Power\n- Power Gem\n- Stealth Rock\n- Volt Switch"
+  },
+  {
+    "id": "gen9monotype-fairy-hyper-offense",
+    "format": "gen9monotype",
+    "name": "(Fairy) Hyper Offense",
+    "author": "Hakukias",
+    "source": "https://data.pkmn.cc/teams/gen9monotype.json",
+    "description": "Monotype Hada hiperofensivo con Klefki para hazards/Spikes, Iron Valiant y Flutter Mane como sweepers especiales y Hatterene/Clefable como wallbreakers shiny.",
+    "tags": [
+      "monotype",
+      "fairy",
+      "hyper offense"
+    ],
+    "export": "Klefki (M) @ Light Clay\nAbility: Prankster\nTera Type: Steel\nEVs: 252 HP / 200 Def / 56 Spe\nBold Nature\n- Light Screen\n- Reflect\n- Spikes\n- Thunder Wave\n\nAzumarill (M) @ Sitrus Berry\nAbility: Huge Power\nTera Type: Water\nEVs: 4 HP / 252 Atk / 252 Spe\nAdamant Nature\n- Aqua Jet\n- Belly Drum\n- Knock Off\n- Liquidation\n\nClefable (F) @ Heavy-Duty Boots\nAbility: Unaware\nShiny: Yes\nTera Type: Fairy\nEVs: 252 HP / 160 Def / 92 SpD / 4 Spe\nBold Nature\n- Flamethrower\n- Moonblast\n- Moonlight\n- Stealth Rock\n\nFlutter Mane @ Choice Specs\nAbility: Protosynthesis\nTera Type: Ghost\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Moonblast\n- Psyshock\n- Shadow Ball\n- Thunderbolt\n\nHatterene @ Heavy-Duty Boots\nAbility: Magic Bounce\nShiny: Yes\nTera Type: Psychic\nEVs: 252 HP / 192 Def / 64 Spe\nBold Nature\n- Calm Mind\n- Draining Kiss\n- Giga Drain\n- Psychic\n\nIron Valiant @ Life Orb\nAbility: Quark Drive\nShiny: Yes\nTera Type: Fairy\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Knock Off\n- Shadow Sneak\n- Swords Dance"
+  },
+  {
+    "id": "gen9monotype-flying-balanced",
+    "format": "gen9monotype",
+    "name": "(Flying) Balanced",
+    "author": "Starfire Scarlet",
+    "source": "https://data.pkmn.cc/teams/gen9monotype.json",
+    "description": "Monotype Volador balanceado con Corviknight/Gliscor de hazard control y Dragonite/Enamorus/Articuno/Zapdos como wallbreakers especiales/físicos.",
+    "tags": [
+      "monotype",
+      "flying",
+      "balance"
+    ],
+    "export": "Corviknight (F) @ Leftovers\nAbility: Pressure\nTera Type: Flying\nEVs: 252 HP / 244 Def / 12 Spe\nBold Nature\n- Body Press\n- Defog\n- Iron Defense\n- Roost\n\nArticuno @ Heavy-Duty Boots\nAbility: Pressure\nTera Type: Ice\nEVs: 248 HP / 208 SpD / 52 Spe\nCalm Nature\n- Freeze-Dry\n- Haze\n- Roost\n- Substitute\n\nDragonite (F) @ Heavy-Duty Boots\nAbility: Multiscale\nTera Type: Dragon\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Dragon Claw\n- Dragon Dance\n- Earthquake\n- Fire Punch\n\nEnamorus @ Choice Scarf\nAbility: Contrary\nTera Type: Fairy\nEVs: 252 SpA / 4 SpD / 252 Spe\nNaive Nature\n- Earth Power\n- Healing Wish\n- Moonblast\n- Superpower\n\nGliscor (M) @ Toxic Orb\nAbility: Poison Heal\nTera Type: Ground\nEVs: 244 HP / 208 SpD / 56 Spe\nCareful Nature\n- Earthquake\n- Protect\n- Stealth Rock\n- Toxic\n\nZapdos @ Leftovers\nAbility: Pressure\nTera Type: Electric\nEVs: 248 HP / 8 Def / 252 Spe\nTimid Nature\n- Discharge\n- Hurricane\n- Roost\n- Substitute"
+  },
+  {
+    "id": "gen9monotype-poison-balanced",
+    "format": "gen9monotype",
+    "name": "(Poison) Balanced",
+    "author": "mushamu",
+    "source": "https://data.pkmn.cc/teams/gen9monotype.json",
+    "description": "Monotype Veneno balanceado con Toxapex/Amoonguss/Weezing-Galar como núcleo defensivo y Sneasler/Salazzle/Muk-Alola como wallbreakers rápidos.",
+    "tags": [
+      "monotype",
+      "poison",
+      "balance"
+    ],
+    "export": "Sneasler (F) @ Heavy-Duty Boots\nAbility: Poison Touch\nTera Type: Fighting\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Dire Claw\n- Fake Out\n- U-turn\n\nAmoonguss (F) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Grass\nEVs: 248 HP / 252 Def / 8 SpD\nBold Nature\n- Foul Play\n- Giga Drain\n- Spore\n- Synthesis\n\nMuk-Alola (F) @ Black Sludge\nAbility: Poison Touch\nTera Type: Poison\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Drain Punch\n- Knock Off\n- Rest\n- Sleep Talk\n\nSalazzle @ Heavy-Duty Boots\nAbility: Corrosion\nTera Type: Poison\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Encore\n- Flamethrower\n- Protect\n- Toxic\n\nToxapex (F) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Poison\nEVs: 248 HP / 252 Def / 8 SpD\nBold Nature\n- Haze\n- Infestation\n- Recover\n- Toxic\n\nWeezing-Galar (F) @ Covert Cloak\nAbility: Levitate\nTera Type: Poison\nEVs: 252 HP / 252 Def / 4 SpA\nBold Nature\n- Defog\n- Pain Split\n- Strange Steam\n- Will-O-Wisp"
   },
   {
     "id": "gen9monotype-steel-balanced",
@@ -97,18 +307,18 @@
     "export": "Corviknight (M) @ Leftovers\nAbility: Pressure\nTera Type: Flying\nEVs: 252 HP / 252 Def / 4 SpD\nRelaxed Nature\n- Brave Bird\n- Defog\n- Roost\n- U-turn\n\nEmpoleon (M) @ Heavy-Duty Boots\nAbility: Competitive\nTera Type: Water\nEVs: 252 HP / 4 Def / 252 SpD\nSassy Nature\n- Flip Turn\n- Knock Off\n- Roost\n- Surf\n\nGholdengo @ Air Balloon\nAbility: Good as Gold\nTera Type: Steel\nEVs: 248 HP / 36 Def / 224 Spe\nBold Nature\n- Make It Rain\n- Nasty Plot\n- Recover\n- Shadow Ball\n\nHeatran (M) @ Leftovers\nAbility: Flash Fire\nTera Type: Fire\nEVs: 252 HP / 4 Def / 252 SpD\nCalm Nature\n- Earth Power\n- Lava Plume\n- Protect\n- Stealth Rock\n\nIron Treads @ Choice Scarf\nAbility: Quark Drive\nTera Type: Ground\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Earthquake\n- Ice Spinner\n- Stone Edge\n- Volt Switch\n\nKingambit (M) @ Black Glasses\nAbility: Supreme Overlord\nTera Type: Dark\nEVs: 252 Atk / 4 Def / 252 Spe\nAdamant Nature\n- Kowtow Cleave\n- Low Kick\n- Sucker Punch\n- Swords Dance"
   },
   {
-    "id": "gen9monotype-fairy-hyper-offense",
+    "id": "gen9monotype-water-rain",
     "format": "gen9monotype",
-    "name": "(Fairy) Hyper Offense",
-    "author": "Hakukias",
+    "name": "(Water) Rain",
+    "author": "Super Florizarre",
     "source": "https://data.pkmn.cc/teams/gen9monotype.json",
-    "description": "Monotype Hada hiperofensivo con Klefki para hazards/Spikes, Iron Valiant y Flutter Mane como sweepers especiales y Hatterene/Clefable como wallbreakers shiny.",
+    "description": "Monotype Agua con Pelipper (Drizzle) activando Swift Swim para Barraskewda/Urshifu-Rapid-Strike, con Toxapex/Gastrodon de soporte.",
     "tags": [
       "monotype",
-      "fairy",
-      "hyper offense"
+      "water",
+      "rain"
     ],
-    "export": "Klefki (M) @ Light Clay\nAbility: Prankster\nTera Type: Steel\nEVs: 252 HP / 200 Def / 56 Spe\nBold Nature\n- Light Screen\n- Reflect\n- Spikes\n- Thunder Wave\n\nAzumarill (M) @ Sitrus Berry\nAbility: Huge Power\nTera Type: Water\nEVs: 4 HP / 252 Atk / 252 Spe\nAdamant Nature\n- Aqua Jet\n- Belly Drum\n- Knock Off\n- Liquidation\n\nClefable (F) @ Heavy-Duty Boots\nAbility: Unaware\nShiny: Yes\nTera Type: Fairy\nEVs: 252 HP / 160 Def / 92 SpD / 4 Spe\nBold Nature\n- Flamethrower\n- Moonblast\n- Moonlight\n- Stealth Rock\n\nFlutter Mane @ Choice Specs\nAbility: Protosynthesis\nTera Type: Ghost\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Moonblast\n- Psyshock\n- Shadow Ball\n- Thunderbolt\n\nHatterene @ Heavy-Duty Boots\nAbility: Magic Bounce\nShiny: Yes\nTera Type: Psychic\nEVs: 252 HP / 192 Def / 64 Spe\nBold Nature\n- Calm Mind\n- Draining Kiss\n- Giga Drain\n- Psychic\n\nIron Valiant @ Life Orb\nAbility: Quark Drive\nShiny: Yes\nTera Type: Fairy\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Knock Off\n- Shadow Sneak\n- Swords Dance"
+    "export": "Pelipper (M) @ Heavy-Duty Boots\nAbility: Drizzle\nTera Type: Water\nEVs: 252 HP / 252 Def / 4 SpD\nRelaxed Nature\n- Hurricane\n- Knock Off\n- Roost\n- U-turn\n\nBarraskewda (M) @ Choice Band\nAbility: Swift Swim\nTera Type: Water\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Crunch\n- Flip Turn\n- Liquidation\n- Psychic Fangs\n\nGastrodon (M) @ Heavy-Duty Boots\nAbility: Sticky Hold\nTera Type: Water\nEVs: 252 HP / 4 Def / 252 SpD\nSassy Nature\n- Earthquake\n- Ice Beam\n- Recover\n- Stealth Rock\n\nSamurott-Hisui (M) @ Choice Scarf\nAbility: Sharpness\nTera Type: Water\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Ceaseless Edge\n- Flip Turn\n- Knock Off\n- Sacred Sword\n\nToxapex (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Poison\nEVs: 248 HP / 252 Def / 8 SpD\nImpish Nature\n- Haze\n- Poison Jab\n- Recover\n- Toxic Spikes\n\nUrshifu-Rapid-Strike (M) @ Punching Glove\nAbility: Unseen Fist\nTera Type: Fighting\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Drain Punch\n- Substitute\n- Surging Strikes\n- Swords Dance"
   },
   {
     "id": "gen9doublesou-ghold-tailwind-balance",
@@ -126,6 +336,48 @@
     "export": "Gholdengo @ Leftovers\nAbility: Good as Gold\nTera Type: Dragon\nEVs: 248 HP / 40 Def / 112 SpA / 24 SpD / 84 Spe\nModest Nature\n- Make It Rain\n- Nasty Plot\n- Protect\n- Shadow Ball\n\nChien-Pao @ Focus Sash\nAbility: Sword of Ruin\nTera Type: Ghost\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Icicle Crash\n- Protect\n- Sacred Sword\n- Sucker Punch\n\nIncineroar (M) @ Sitrus Berry\nAbility: Intimidate\nTera Type: Ghost\nEVs: 252 HP / 132 Def / 80 SpD / 44 Spe\nImpish Nature\n- Fake Out\n- Flare Blitz\n- Knock Off\n- Parting Shot\n\nOgerpon-Wellspring @ Wellspring Mask\nAbility: Water Absorb\nTera Type: Water\nEVs: 200 HP / 124 Atk / 184 Spe\nJolly Nature\n- Follow Me\n- Horn Leech\n- Ivy Cudgel\n- Spiky Shield\n\nRaging Bolt @ Assault Vest\nAbility: Protosynthesis\nTera Type: Fairy\nEVs: 132 HP / 140 Def / 100 SpA / 60 SpD / 76 Spe\nModest Nature\nIVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe\n- Draco Meteor\n- Electroweb\n- Snarl\n- Thunderclap\n\nTornadus @ Covert Cloak\nAbility: Prankster\nTera Type: Steel\nEVs: 252 HP / 212 Def / 16 SpA / 28 SpD\nModest Nature\n- Bleakwind Storm\n- Protect\n- Rain Dance\n- Tailwind"
   },
   {
+    "id": "gen9doublesou-veils-gambit",
+    "format": "gen9doublesou",
+    "name": "VEILS+GAMBIT",
+    "author": "Smogon Sample Teams",
+    "source": "https://data.pkmn.cc/teams/gen9doublesou.json",
+    "description": "Doubles con Ninetales-Alola (Aurora Veil) dando pantallas a Kyurem/Kingambit como wallbreakers, e Incineroar/Landorus de soporte (Fake Out/Intimidate).",
+    "tags": [
+      "doubles",
+      "aurora veil",
+      "kingambit"
+    ],
+    "export": "Ninetales-Alola (M) @ Light Clay\nAbility: Snow Warning\nTera Type: Ghost\nEVs: 164 HP / 64 Def / 28 SpA / 252 Spe\nTimid Nature\n- Aurora Veil\n- Blizzard\n- Encore\n- Protect\n\nIncineroar (M) @ Sitrus Berry\nAbility: Intimidate\nTera Type: Ghost\nEVs: 244 HP / 44 Atk / 156 Def / 64 SpD\nImpish Nature\n- Fake Out\n- Knock Off\n- Parting Shot\n- Will-O-Wisp\n\nKingambit (M) @ Leftovers\nAbility: Defiant\nTera Type: Dragon\nEVs: 252 HP / 216 Atk / 20 Def / 20 SpD\nAdamant Nature\n- Kowtow Cleave\n- Protect\n- Sucker Punch\n- Swords Dance\n\nKyurem @ Assault Vest\nAbility: Pressure\nTera Type: Fairy\nEVs: 72 HP / 252 SpA / 184 Spe\nTimid Nature\n- Blizzard\n- Earth Power\n- Flash Cannon\n- Freeze-Dry\n\nLandorus @ Life Orb\nAbility: Sheer Force\nTera Type: Steel\nEVs: 236 SpA / 20 SpD / 252 Spe\nTimid Nature\n- Earth Power\n- Protect\n- Sludge Bomb\n- Substitute\n\nOgerpon-Wellspring @ Wellspring Mask\nAbility: Water Absorb\nTera Type: Water\nEVs: 192 HP / 28 Atk / 100 Def / 188 Spe\nJolly Nature\n- Follow Me\n- Horn Leech\n- Ivy Cudgel\n- Spiky Shield"
+  },
+  {
+    "id": "gen9doublesou-tinglu-glim-prio-spam",
+    "format": "gen9doublesou",
+    "name": "Ting lu Glim Prio Spam",
+    "author": "Mudkip",
+    "source": "https://data.pkmn.cc/teams/gen9doublesou.json",
+    "description": "Doubles ofensivo con prioridad (Chien-Pao/Dragonite) apoyada por Glimmora (Stealth Rock) y Ting-Lu/Rillaboom/Gouging Fire como wallbreakers físicos.",
+    "tags": [
+      "doubles",
+      "offense",
+      "priority"
+    ],
+    "export": "Chien-Pao @ Focus Sash\nAbility: Sword of Ruin\nTera Type: Ghost\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Ice Spinner\n- Protect\n- Sacred Sword\n- Sucker Punch\n\nDragonite (M) @ Choice Band\nAbility: Inner Focus\nTera Type: Normal\nEVs: 252 HP / 252 Atk / 4 SpD\nAdamant Nature\n- Dragon Claw\n- Extreme Speed\n- Fire Punch\n- Ice Spinner\n\nGlimmora (M) @ Focus Sash\nAbility: Toxic Debris\nTera Type: Grass\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Earth Power\n- Mortal Spin\n- Power Gem\n- Stealth Rock\n\nGouging Fire @ Booster Energy\nAbility: Protosynthesis\nTera Type: Fairy\nEVs: 164 HP / 128 Atk / 216 Spe\nJolly Nature\nIVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe\n- Breaking Swipe\n- Burning Bulwark\n- Heat Crash\n- Howl\n\nRillaboom (M) @ Assault Vest\nAbility: Grassy Surge\nTera Type: Fire\nEVs: 252 HP / 252 Atk / 4 SpD\nAdamant Nature\n- Fake Out\n- Grassy Glide\n- U-turn\n- Wood Hammer\n\nTing-Lu @ Leftovers\nAbility: Vessel of Ruin\nTera Type: Ghost\nEVs: 144 HP / 112 Def / 184 SpD / 68 Spe\nCareful Nature\n- Spikes\n- Stomping Tantrum\n- Throat Chop\n- Whirlwind"
+  },
+  {
+    "id": "gen9doublesou-regidrago",
+    "format": "gen9doublesou",
+    "name": "regidrago",
+    "author": "bagel",
+    "source": "https://data.pkmn.cc/teams/gen9doublesou.json",
+    "description": "Doubles con Regidrago y Ursaluna-Bloodmoon como wallbreakers principales, Farigiraf (Trick Room/Imposter) y Tornadus de soporte (Prankster).",
+    "tags": [
+      "doubles",
+      "regidrago",
+      "ursaluna"
+    ],
+    "export": "Regidrago @ Dragon Fang\nAbility: Dragon's Maw\nTera Type: Steel\nEVs: 252 SpA / 4 SpD / 252 Spe\nModest Nature\n- Draco Meteor\n- Dragon Energy\n- Earth Power\n- Protect\n\nFarigiraf (M) @ Throat Spray\nAbility: Armor Tail\nTera Type: Fairy\nEVs: 160 HP / 128 Def / 56 SpA / 80 SpD / 84 Spe\nModest Nature\n- Hyper Voice\n- Protect\n- Psychic\n- Trick Room\n\nIron Hands @ Assault Vest\nAbility: Quark Drive\nTera Type: Grass\nEVs: 128 HP / 112 Atk / 16 Def / 252 SpD\nAdamant Nature\n- Close Combat\n- Fake Out\n- Volt Switch\n- Wild Charge\n\nOgerpon-Wellspring @ Wellspring Mask\nAbility: Water Absorb\nTera Type: Water\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Follow Me\n- Ivy Cudgel\n- Spiky Shield\n- Wood Hammer\n\nTornadus @ Focus Sash\nAbility: Prankster\nTera Type: Ghost\nEVs: 4 Def / 252 SpA / 252 Spe\nTimid Nature\n- Bleakwind Storm\n- Icy Wind\n- Protect\n- Tailwind\n\nUrsaluna-Bloodmoon @ Life Orb\nAbility: Mind's Eye\nTera Type: Normal\nEVs: 4 HP / 252 SpA / 252 Spe\nModest Nature\n- Blood Moon\n- Earth Power\n- Hyper Voice\n- Protect"
+  },
+  {
     "id": "gen9nationaldex-wcop-grassy",
     "format": "gen9nationaldex",
     "name": "WCOP grassy",
@@ -141,6 +393,51 @@
     "export": "Latias @ Latiasite\nAbility: Levitate\nTera Type: Dragon\nEVs: 248 HP / 8 Def / 252 Spe\nTimid Nature\n- Aura Sphere\n- Calm Mind\n- Psyshock\n- Roost\n\nAlomomola (M) @ Heavy-Duty Boots\nAbility: Regenerator\nLevel: 99\nTera Type: Poison\nEVs: 4 HP / 252 Def / 252 SpD\nRelaxed Nature\n- Flip Turn\n- Protect\n- Toxic\n- Wish\n\nHeatran (M) @ Leftovers\nAbility: Flash Fire\nTera Type: Grass\nEVs: 248 HP / 52 SpA / 160 SpD / 48 Spe\nCalm Nature\n- Earth Power\n- Magma Storm\n- Stealth Rock\n- Taunt\n\nKartana @ Fightinium Z\nAbility: Beast Boost\nTera Type: Grass\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Leaf Blade\n- Sacred Sword\n- Smart Strike\n- Swords Dance\n\nLandorus-Therian @ Choice Scarf\nAbility: Intimidate\nTera Type: Water\nEVs: 152 HP / 48 Atk / 176 Def / 132 Spe\nJolly Nature\n- Defog\n- Earthquake\n- Rock Slide\n- U-turn\n\nRillaboom (M) @ Choice Band\nAbility: Grassy Surge\nTera Type: Grass\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Grassy Glide\n- Knock Off\n- U-turn\n- Wood Hammer"
   },
   {
+    "id": "gen9nationaldex-mmedi-hydrei",
+    "format": "gen9nationaldex",
+    "name": "mmedi hydrei",
+    "author": "saki kurokuma",
+    "source": "https://data.pkmn.cc/teams/gen9nationaldex.json",
+    "description": "Balance de National Dex con Medicham (Pure Power) e Hydreigon como wallbreakers, Clefable/Heatran/Landorus-Therian de soporte y hazard control.",
+    "tags": [
+      "national dex",
+      "balance",
+      "medicham",
+      "hydreigon"
+    ],
+    "export": "Medicham (M) @ Medichamite\nAbility: Pure Power\nTera Type: Fighting\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Bullet Punch\n- Close Combat\n- Fake Out\n- Zen Headbutt\n\nClefable (M) @ Leftovers\nAbility: Magic Guard\nTera Type: Dragon\nEVs: 252 HP / 244 Def / 12 Spe\nBold Nature\n- Moonblast\n- Soft-Boiled\n- Stealth Rock\n- Thunder Wave\n\nHeatran (M) @ Leftovers\nAbility: Flash Fire\nTera Type: Fairy\nEVs: 252 HP / 4 SpA / 252 Spe\nTimid Nature\n- Earth Power\n- Hidden Power Ice\n- Magma Storm\n- Toxic\n\nHydreigon (M) @ Choice Specs\nAbility: Levitate\nTera Type: Dark\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Dark Pulse\n- Draco Meteor\n- Flash Cannon\n- Focus Blast\n\nLandorus-Therian @ Choice Scarf\nAbility: Intimidate\nTera Type: Fairy\nEVs: 208 HP / 4 Atk / 128 Def / 168 Spe\nJolly Nature\n- Defog\n- Earthquake\n- Stone Edge\n- U-turn\n\nOgerpon @ Heavy-Duty Boots\nAbility: Defiant\nTera Type: Grass\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Ivy Cudgel\n- Knock Off\n- Superpower\n- Swords Dance"
+  },
+  {
+    "id": "gen9nationaldex-monofire-larp-crown",
+    "format": "gen9nationaldex",
+    "name": "monofire larp crown",
+    "author": "PRC BOB MOSS",
+    "source": "https://data.pkmn.cc/teams/gen9nationaldex.json",
+    "description": "Balance de National Dex con Gouging Fire e Iron Crown como wallbreakers principales, Dragonite/Diancie/Landorus-Therian de soporte y hazard control.",
+    "tags": [
+      "national dex",
+      "balance",
+      "gouging fire",
+      "iron crown"
+    ],
+    "export": "Ogerpon-Wellspring @ Wellspring Mask\nAbility: Water Absorb\nTera Type: Water\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Ivy Cudgel\n- Power Whip\n- Superpower\n- Swords Dance\n\nDiancie @ Diancite\nAbility: Clear Body\nTera Type: Rock\nEVs: 244 HP / 12 Def / 252 Spe\nTimid Nature\n- Endeavor\n- Moonblast\n- Spikes\n- Substitute\n\nDragonite (M) @ Loaded Dice\nAbility: Multiscale\nTera Type: Fire\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Dragon Dance\n- Fire Punch\n- Scale Shot\n- Substitute\n\nGouging Fire @ Dragonium Z\nAbility: Protosynthesis\nTera Type: Fire\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\nIVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe\n- Dragon Dance\n- Earthquake\n- Flare Blitz\n- Outrage\n\nIron Crown @ Booster Energy\nAbility: Quark Drive\nTera Type: Dragon\nEVs: 84 HP / 172 SpA / 252 Spe\nTimid Nature\nIVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe\n- Calm Mind\n- Iron Defense\n- Stored Power\n- Tachyon Cutter\n\nLandorus-Therian @ Rocky Helmet\nAbility: Intimidate\nTera Type: Water\nEVs: 248 HP / 8 Def / 252 Spe\nTimid Nature\n- Earth Power\n- Stealth Rock\n- Taunt\n- U-turn"
+  },
+  {
+    "id": "gen9nationaldex-torn-z-chomp",
+    "format": "gen9nationaldex",
+    "name": "torn z chomp",
+    "author": "sealoo",
+    "source": "https://data.pkmn.cc/teams/gen9nationaldex.json",
+    "description": "Balance de National Dex con Garchomp y Urshifu-Rapid-Strike como wallbreakers físicos, Tapu Lele (Z-move) de ruptura especial y Ferrothorn/Toxapex/Tornadus-Therian de soporte.",
+    "tags": [
+      "national dex",
+      "balance",
+      "garchomp",
+      "tapu lele"
+    ],
+    "export": "Tornadus-Therian @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Steel\nEVs: 248 HP / 8 SpA / 252 Spe\nTimid Nature\n- Bleakwind Storm\n- Defog\n- Knock Off\n- U-turn\n\nFerrothorn (M) @ Leftovers\nAbility: Iron Barbs\nTera Type: Ghost\nEVs: 248 HP / 116 Def / 144 SpD\nImpish Nature\n- Knock Off\n- Leech Seed\n- Power Whip\n- Spikes\n\nGarchomp (M) @ Rockium Z\nAbility: Rough Skin\nTera Type: Dragon\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Earthquake\n- Stealth Rock\n- Stone Edge\n- Swords Dance\n\nTapu Lele @ Choice Specs\nAbility: Psychic Surge\nTera Type: Psychic\nEVs: 252 SpA / 4 SpD / 252 Spe\nModest Nature\n- Hidden Power Fire\n- Moonblast\n- Psychic\n- Psyshock\n\nToxapex (M) @ Rocky Helmet\nAbility: Regenerator\nShiny: Yes\nTera Type: Dragon\nEVs: 248 HP / 116 Def / 144 SpD\nImpish Nature\n- Haze\n- Recover\n- Scald\n- Toxic\n\nUrshifu-Rapid-Strike (M) @ Choice Scarf\nAbility: Unseen Fist\nTera Type: Water\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Ice Spinner\n- Surging Strikes\n- U-turn"
+  },
+  {
     "id": "gen9nationaldex-ursaluna-tapukoko-balance",
     "format": "gen9nationaldex",
     "name": "Be Strong and Hit Stuff - Ursaluna + Tapu Koko Balance",
@@ -154,5 +451,104 @@
       "tapu koko"
     ],
     "export": "Ursaluna (M) @ Flame Orb\nAbility: Guts\nTera Type: Fairy\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Earthquake\n- Facade\n- Fire Punch\n- Swords Dance\n\nCorviknight (M) @ Rocky Helmet\nAbility: Pressure\nTera Type: Dragon\nEVs: 248 HP / 224 Def / 36 SpD\nImpish Nature\n- Brave Bird\n- Defog\n- Roost\n- U-turn\n\nSlowking-Galar (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Dragon\nEVs: 252 HP / 4 Def / 252 SpD\nSassy Nature\n- Chilly Reception\n- Flamethrower\n- Sludge Bomb\n- Thunder Wave\n\nTangrowth (M) @ Rocky Helmet\nAbility: Regenerator\nTera Type: Steel\nEVs: 252 HP / 252 Def / 4 SpD\nRelaxed Nature\nIVs: 30 Atk / 30 Def\n- Hidden Power Ice\n- Knock Off\n- Power Whip\n- Sleep Powder\n\nTapu Koko @ Electrium Z\nAbility: Electric Surge\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\nIVs: 30 Atk / 30 Def\n- Hidden Power Ice\n- Roost\n- Thunderbolt\n- U-turn\n\nTyranitar (M) @ Tyranitarite\nAbility: Sand Stream\nTera Type: Rock\nEVs: 124 HP / 252 Atk / 132 Spe\nAdamant Nature\n- Knock Off\n- Pursuit\n- Stealth Rock\n- Stone Edge"
+  },
+  {
+    "id": "gen9nationaldex-tloh-iv-anique",
+    "format": "gen9nationaldex",
+    "name": "TLOH IV - anique",
+    "author": "setset77",
+    "source": "https://data.pkmn.cc/teams/gen9nationaldex.json",
+    "description": "Stall de National Dex con Blissey/Toxapex/Clodsire/Dondozo como muros, y Corviknight/Gliscor para hazards y recuperación.",
+    "tags": [
+      "national dex",
+      "stall",
+      "blissey",
+      "dondozo"
+    ],
+    "export": "Dondozo (M) @ Leftovers\nAbility: Unaware\nTera Type: Dragon\nEVs: 252 HP / 252 Def / 4 SpD\nImpish Nature\n- Body Press\n- Liquidation\n- Rest\n- Sleep Talk\n\nBlissey @ Leftovers\nAbility: Natural Cure\nTera Type: Dark\nEVs: 252 HP / 252 Def / 4 SpD\nBold Nature\n- Protect\n- Seismic Toss\n- Toxic\n- Wish\n\nClodsire (M) @ Leftovers\nAbility: Unaware\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Amnesia\n- Poison Jab\n- Recover\n- Spikes\n\nCorviknight (M) @ Leftovers\nAbility: Pressure\nTera Type: Dragon\nEVs: 252 HP / 188 Def / 68 Spe\nBold Nature\n- Body Press\n- Defog\n- Iron Defense\n- Roost\n\nGliscor (M) @ Toxic Orb\nAbility: Poison Heal\nTera Type: Fairy\nEVs: 244 HP / 56 Def / 208 SpD\nCareful Nature\n- Earthquake\n- Protect\n- Stealth Rock\n- Toxic\n\nToxapex (M) @ Rocky Helmet\nAbility: Regenerator\nTera Type: Psychic\nEVs: 252 HP / 92 Def / 164 SpD\nCareful Nature\n- Knock Off\n- Recover\n- Scald\n- Toxic Spikes"
+  },
+  {
+    "id": "gen9lc-stunky-tspikes",
+    "format": "gen9lc",
+    "name": "stunky tspikes",
+    "author": "vndrevc++!",
+    "source": "https://data.pkmn.cc/teams/gen9lc.json",
+    "description": "Balance de Little Cup con Stunky (Toxic Spikes) y Mareanie de hazard stack, Mienfoo/Mudbray como wallbreakers físicos y Vullaby/Voltorb-Hisui de soporte.",
+    "tags": [
+      "lc",
+      "balance",
+      "hazard stack",
+      "stunky"
+    ],
+    "export": "Mienfoo (M) @ Eviolite\nAbility: Regenerator\nLevel: 5\nTera Type: Steel\nEVs: 196 Def / 36 SpD / 236 Spe\nJolly Nature\n- Fake Out\n- High Jump Kick\n- Knock Off\n- U-turn\n\nMareanie (M) @ Eviolite\nAbility: Regenerator\nLevel: 5\nTera Type: Dragon\nEVs: 116 HP / 180 Def / 12 SpA / 180 SpD\nBold Nature\n- Recover\n- Sludge Bomb\n- Surf\n- Toxic Spikes\n\nMudbray (M) @ Eviolite\nAbility: Stamina\nLevel: 5\nTera Type: Steel\nEVs: 36 HP / 196 Atk / 36 Def / 236 Spe\nAdamant Nature\n- Earthquake\n- Heavy Slam\n- Stealth Rock\n- Stone Edge\n\nStunky (M) @ Eviolite\nAbility: Aftermath\nLevel: 5\nTera Type: Dark\nEVs: 12 HP / 252 Atk / 244 Spe\nJolly Nature\n- Gunk Shot\n- Knock Off\n- Sucker Punch\n- Temper Flare\n\nVoltorb-Hisui @ Eviolite\nAbility: Aftermath\nLevel: 5\nTera Type: Flying\nEVs: 236 SpA / 76 SpD / 196 Spe\nTimid Nature\n- Giga Drain\n- Protect\n- Tera Blast\n- Volt Switch\n\nVullaby @ Eviolite\nAbility: Overcoat\nLevel: 5\nTera Type: Electric\nEVs: 196 HP / 76 Atk / 236 Def\nImpish Nature\n- Brave Bird\n- Knock Off\n- Roost\n- U-turn"
+  },
+  {
+    "id": "gen9lc-standard-6",
+    "format": "gen9lc",
+    "name": "standard 6",
+    "author": "Hacker",
+    "source": "https://data.pkmn.cc/teams/gen9lc.json",
+    "description": "Balance estándar de Little Cup con Mienfoo/Growlithe-Hisui como wallbreakers físicos, Foongus (Spore) de soporte y Mudbray/Vullaby/Stunky de control.",
+    "tags": [
+      "lc",
+      "balance"
+    ],
+    "export": "Mienfoo (M) @ Eviolite\nAbility: Regenerator\nLevel: 5\nTera Type: Steel\nEVs: 196 Def / 36 SpD / 236 Spe\nJolly Nature\n- Fake Out\n- High Jump Kick\n- Knock Off\n- U-turn\n\nFoongus (M) @ Eviolite\nAbility: Regenerator\nLevel: 5\nTera Type: Ghost\nEVs: 124 HP / 156 Def / 156 SpD\nBold Nature\n- Giga Drain\n- Sludge Bomb\n- Spore\n- Synthesis\n\nGrowlithe-Hisui (M) @ Choice Scarf\nAbility: Rock Head\nLevel: 5\nTera Type: Fire\nEVs: 36 HP / 236 Atk / 236 Spe\nAdamant Nature\n- Flare Blitz\n- Head Smash\n- Psychic Fangs\n- Rock Blast\n\nMudbray (M) @ Eviolite\nAbility: Stamina\nLevel: 5\nTera Type: Steel\nEVs: 36 HP / 196 Atk / 196 Def / 76 Spe\nAdamant Nature\n- Earthquake\n- Heavy Slam\n- Stealth Rock\n- Stone Edge\n\nStunky (M) @ Eviolite\nAbility: Aftermath\nLevel: 5\nTera Type: Dark\nEVs: 12 HP / 252 Atk / 244 Spe\nJolly Nature\n- Gunk Shot\n- Knock Off\n- Sucker Punch\n- Temper Flare\n\nVullaby @ Eviolite\nAbility: Weak Armor\nLevel: 5\nTera Type: Electric\nEVs: 236 Atk / 76 Def / 196 Spe\nJolly Nature\n- Brave Bird\n- Defog\n- Knock Off\n- Roost"
+  },
+  {
+    "id": "gen9lc-volt-turn-offense",
+    "format": "gen9lc",
+    "name": "LC 77 VoltTurn Offense",
+    "author": "Acehunter1",
+    "source": "https://data.pkmn.cc/teams/gen9lc.json",
+    "description": "Ofensiva VoltTurn de Little Cup con Voltorb-Hisui/Tentacool/Toedscool pivoteando hacia Larvesta/Mienfoo/Meowth-Galar como wallbreakers (varios shiny).",
+    "tags": [
+      "lc",
+      "voltturn",
+      "offense"
+    ],
+    "export": "Voltorb-Hisui @ Eviolite\nAbility: Static\nLevel: 5\nShiny: Yes\nTera Type: Flying\nEVs: 36 HP / 36 Def / 236 SpA / 196 Spe\nTimid Nature\n- Giga Drain\n- Tera Blast\n- Thunderbolt\n- Volt Switch\n\nLarvesta (F) @ Choice Scarf\nAbility: Flame Body\nLevel: 5\nShiny: Yes\nTera Type: Fire\nEVs: 76 HP / 236 Atk / 196 Spe\nJolly Nature\n- Flare Blitz\n- Morning Sun\n- U-turn\n- Will-O-Wisp\n\nMeowth-Galar (F) @ Eviolite\nAbility: Tough Claws\nLevel: 5\nTera Type: Bug\nEVs: 196 HP / 76 Atk / 236 Def\nImpish Nature\n- Fake Out\n- Iron Head\n- Stealth Rock\n- U-turn\n\nMienfoo (M) @ Eviolite\nAbility: Regenerator\nLevel: 5\nShiny: Yes\nTera Type: Water\nEVs: 236 HP / 196 Def / 36 SpD\nImpish Nature\n- Fake Out\n- High Jump Kick\n- Knock Off\n- U-turn\n\nTentacool (F) @ Eviolite\nAbility: Clear Body\nLevel: 5\nShiny: Yes\nTera Type: Grass\nEVs: 36 HP / 116 Atk / 156 Def / 196 Spe\nJolly Nature\n- Flip Turn\n- Gunk Shot\n- Knock Off\n- Rapid Spin\n\nToedscool (F) @ Eviolite\nAbility: Mycelium Might\nLevel: 5\nTera Type: Fairy\nEVs: 36 HP / 156 Def / 116 SpA / 196 Spe\nTimid Nature\n- Dazzling Gleam\n- Earth Power\n- Knock Off\n- Rapid Spin"
+  },
+  {
+    "id": "gen9pu-av-golurk-cm-glowbro",
+    "format": "gen9pu",
+    "name": "av golurk + cm glowbro",
+    "author": "asa",
+    "source": "https://data.pkmn.cc/teams/gen9pu.json",
+    "description": "Balance de PU con Golurk (Assault Vest) y Slowbro-Galar (Calm Mind) como wallbreakers, Milotic/Rotom-Mow de soporte y Bombirdier/Tauros-Paldea-Blaze de presión física.",
+    "tags": [
+      "pu",
+      "balance",
+      "golurk"
+    ],
+    "export": "Bombirdier (M) @ Heavy-Duty Boots\nAbility: Big Pecks\nTera Type: Dark\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Brave Bird\n- Knock Off\n- Stealth Rock\n- Sucker Punch\n\nGolurk @ Assault Vest\nAbility: No Guard\nTera Type: Fairy\nEVs: 252 Atk / 80 SpD / 176 Spe\nAdamant Nature\n- Close Combat\n- Earthquake\n- Ice Punch\n- Poltergeist\n\nMilotic (M) @ Heavy-Duty Boots\nAbility: Marvel Scale\nTera Type: Poison\nEVs: 252 HP / 196 Def / 12 SpD / 48 Spe\nCalm Nature\n- Haze\n- Ice Beam\n- Recover\n- Scald\n\nRotom-Mow @ Choice Scarf\nAbility: Levitate\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Leaf Storm\n- Thunderbolt\n- Trick\n- Volt Switch\n\nSlowbro-Galar (M) @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Water\nEVs: 248 HP / 252 Def / 8 SpD\nBold Nature\n- Calm Mind\n- Flamethrower\n- Psyshock\n- Slack Off\n\nTauros-Paldea-Blaze @ Heavy-Duty Boots\nAbility: Intimidate\nTera Type: Grass\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Bulk Up\n- Close Combat\n- Flare Blitz\n- Will-O-Wisp"
+  },
+  {
+    "id": "gen9pu-cm-florges-salazzle-balance",
+    "format": "gen9pu",
+    "name": "cm florges+salazzle balance",
+    "author": "sensei axew",
+    "source": "https://data.pkmn.cc/teams/gen9pu.json",
+    "description": "Balance de PU con Florges (Calm Mind) como win condition especial, Salazzle/Zoroark como wallbreakers rápidos y Bronzong/Gastrodon/Scyther de soporte.",
+    "tags": [
+      "pu",
+      "balance",
+      "florges"
+    ],
+    "export": "Florges @ Leftovers\nAbility: Flower Veil\nTera Type: Poison\nEVs: 252 HP / 236 Def / 20 Spe\nTimid Nature\n- Calm Mind\n- Moonblast\n- Psychic Noise\n- Synthesis\n\nBronzong @ Leftovers\nAbility: Levitate\nTera Type: Electric\nEVs: 252 HP / 252 Def / 4 Spe\nBold Nature\n- Body Press\n- Iron Defense\n- Night Shade\n- Psychic Noise\n\nGastrodon (M) @ Leftovers\nAbility: Storm Drain\nTera Type: Poison\nEVs: 252 HP / 252 Def / 4 Spe\nBold Nature\n- Earth Power\n- Recover\n- Sludge Bomb\n- Stealth Rock\n\nSalazzle @ Heavy-Duty Boots\nAbility: Corrosion\nTera Type: Fire\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Encore\n- Fire Blast\n- Sludge Bomb\n- Toxic\n\nScyther (M) @ Heavy-Duty Boots\nAbility: Technician\nTera Type: Steel\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Close Combat\n- Defog\n- Dual Wingbeat\n- U-turn\n\nZoroark (M) @ Choice Scarf\nAbility: Illusion\nTera Type: Fighting\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Knock Off\n- Low Kick\n- Trick\n- U-turn"
+  },
+  {
+    "id": "gen9pu-skunk-hazard-stack",
+    "format": "gen9pu",
+    "name": "skunk hazard stack",
+    "author": "pult2lp zebstrika",
+    "source": "https://data.pkmn.cc/teams/gen9pu.json",
+    "description": "Hazard stack de PU con Skuntank (Sucker Punch/hazards) y Sandslash-Alola como rompedores, y Florges/Milotic/Gligar/Kilowattrel de soporte.",
+    "tags": [
+      "pu",
+      "hazard stack",
+      "skuntank"
+    ],
+    "export": "Skuntank (M) @ Rocky Helmet\nAbility: Aftermath\nTera Type: Dark\nEVs: 152 HP / 192 Atk / 60 SpD / 104 Spe\nAdamant Nature\n- Gunk Shot\n- Knock Off\n- Sucker Punch\n- Taunt\n\nFlorges @ Heavy-Duty Boots\nAbility: Flower Veil\nTera Type: Poison\nEVs: 248 HP / 204 Def / 56 Spe\nBold Nature\n- Calm Mind\n- Moonblast\n- Synthesis\n- Wish\n\nGligar (M) @ Eviolite\nAbility: Immunity\nTera Type: Ghost\nEVs: 252 HP / 156 Def / 100 SpD\nImpish Nature\n- Earthquake\n- Stealth Rock\n- Toxic\n- U-turn\n\nKilowattrel (M) @ Heavy-Duty Boots\nAbility: Competitive\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Hurricane\n- Roost\n- Thunderbolt\n- U-turn\n\nMilotic (M) @ Heavy-Duty Boots\nAbility: Marvel Scale\nTera Type: Dragon\nEVs: 252 HP / 236 Def / 8 SpD / 12 Spe\nCalm Nature\n- Dragon Tail\n- Ice Beam\n- Recover\n- Scald\n\nSandslash-Alola (M) @ Leftovers\nAbility: Slush Rush\nTera Type: Ghost\nEVs: 252 HP / 204 SpD / 52 Spe\nCareful Nature\n- Ice Spinner\n- Knock Off\n- Rapid Spin\n- Spikes"
   }
 ]

@@ -14,6 +14,8 @@
     { id: 'gen9uu', name: 'Gen 9 UU' },
     { id: 'gen9ru', name: 'Gen 9 RU' },
     { id: 'gen9nu', name: 'Gen 9 NU' },
+    { id: 'gen9pu', name: 'Gen 9 PU' },
+    { id: 'gen9lc', name: 'Gen 9 LC' },
     { id: 'gen9monotype', name: 'Gen 9 Monotype' },
     { id: 'gen9doublesou', name: 'Gen 9 Doubles OU' },
     { id: 'gen9nationaldex', name: 'Gen 9 National Dex' },
