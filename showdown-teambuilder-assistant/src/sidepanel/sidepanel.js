@@ -251,6 +251,14 @@
     setTimeout(() => { btn.textContent = original; btn.disabled = false; }, ms || 1600);
   }
 
+  let statusTimeout;
+  function showStatus(text, ms) {
+    if (!text) return;
+    clearTimeout(statusTimeout);
+    els.status.textContent = text;
+    statusTimeout = setTimeout(() => { els.status.textContent = ''; }, ms || 8000);
+  }
+
   async function copyTeam(team, btn) {
     try {
       await navigator.clipboard.writeText(team.export || '');
@@ -277,7 +285,8 @@
     try {
       const resp = await chrome.tabs.sendMessage(tab.id, { type: 'TBA_IMPORT_TEAM', export: team.export });
       if (resp && resp.ok && resp.saved) {
-        flash(btn, '✅ Importado');
+        flash(btn, '✅ Importado', 2400);
+        showStatus(resp.note);
       } else if (resp && resp.ok) {
         await copyTeam(team);
         flash(btn, '📋 Pegado, pulsa Guardar');

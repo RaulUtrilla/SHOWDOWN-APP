@@ -1,10 +1,16 @@
 // ═══════════════════════════════════════════════════════════════════════════
-// teambuilder.content.js — recibe el equipo desde el side panel y trata de
-// pegarlo en el diálogo "Import/Export" del Teambuilder de Showdown.
+// teambuilder.content.js — recibe el equipo desde el side panel e intenta
+// importarlo al Teambuilder de Showdown.
 //
-// Esto es BEST-EFFORT (ver selectors.js): si no se encuentra el textarea o el
-// botón de guardar, se responde con el motivo y el side panel hace fallback
-// a "copiar al portapapeles" con instrucciones para el usuario.
+// El Teambuilder no tiene un diálogo "Import/Export" por equipo en la sala
+// de lista: hay que (1) crear un equipo nuevo, (2) abrir su editor y (3)
+// cambiar a la pestaña "Import/Export", cuyo textarea se autoguarda con el
+// evento "input" (no hay botón "Guardar"). Ver selectors.js para detalles
+// y los selectores candidatos.
+//
+// Esto es BEST-EFFORT: si Showdown cambia su DOM y algún paso falla, se
+// responde con el motivo y el side panel hace fallback a "copiar al
+// portapapeles" con instrucciones para el usuario.
 // ═══════════════════════════════════════════════════════════════════════════
 (function () {
   const SEL = window.TBA && window.TBA.SELECTORS;
@@ -49,38 +55,70 @@
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
+  // Reintenta `getter()` hasta que devuelva algo truthy o se agoten los
+  // intentos (la SPA de Showdown tarda un poco en renderizar tras cada paso).
+  async function waitFor(getter, tries, intervalMs) {
+    for (let i = 0; i < tries; i++) {
+      const el = getter();
+      if (el) return el;
+      await delay(intervalMs);
+    }
+    return null;
+  }
+
   async function tryImport(exportText) {
     if (!SEL) return { ok: false, reason: 'selectors-missing' };
 
-    const room = queryFirst(SEL.teambuilderRoom) || document;
+    const tbRoom = queryFirst(SEL.teambuilderRoom);
+    if (!tbRoom) return { ok: false, reason: 'no-teambuilder-room' };
 
-    // 1) ¿Ya hay un textarea de import/export visible?
-    let textarea = queryFirst(SEL.importExportTextarea, room);
+    // 1) Crear un equipo nuevo y vacío al principio de la lista.
+    const newTeamBtn = queryFirst(SEL.newTeamButtons, tbRoom);
+    if (!newTeamBtn) return { ok: false, reason: 'no-new-team-button' };
+    newTeamBtn.click();
+    await delay(250);
 
-    // 2) Si no, intentar abrir el diálogo pulsando el botón Import/Export.
-    if (!textarea) {
-      const btn = findButtonByText(SEL.importExportButtonTextPatterns, room);
-      if (!btn) return { ok: false, reason: 'no-button' };
-      btn.click();
-      await delay(200);
-      textarea = queryFirst(SEL.importExportTextarea, room);
-    }
+    // 2) Localizar el enlace al equipo recién creado (el primero de la
+    //    lista, ya que "New team" hace unshift) y recordar a qué sala lleva
+    //    para esperar a que aparezca esa sala exacta.
+    const teamLink = queryFirst(SEL.teamListLinks, tbRoom);
+    if (!teamLink) return { ok: false, reason: 'no-team-link' };
+    const href = teamLink.getAttribute('href') || '';
+    teamLink.click();
 
+    // 3) Esperar a que se abra la sala del editor de ese equipo.
+    const teamRoom = await waitFor(
+      () => (href && document.getElementById('room-' + href)) || null,
+      12, 150
+    );
+    if (!teamRoom) return { ok: false, reason: 'no-team-room' };
+
+    // 4) Cambiar a la pestaña "Import/Export".
+    const importTab = await waitFor(
+      () => findButtonByText(SEL.importExportTabButtonTextPatterns, teamRoom),
+      6, 150
+    );
+    if (!importTab) return { ok: false, reason: 'no-import-tab' };
+    importTab.click();
+
+    // 5) Pegar el equipo en el textarea: el handler "input" del editor lo
+    //    parsea y lo guarda automáticamente (no hay botón "Guardar").
+    const textarea = await waitFor(
+      () => queryFirst(SEL.teamTextarea, teamRoom),
+      6, 150
+    );
     if (!textarea) return { ok: false, reason: 'no-textarea' };
 
     setTextareaValue(textarea, exportText);
     textarea.focus();
 
-    // 3) Intentar guardar/confirmar automáticamente.
-    await delay(50);
-    const saveBtn = findButtonByText(SEL.saveButtonTextPatterns, room);
-    if (saveBtn) {
-      saveBtn.click();
-      return { ok: true, saved: true };
-    }
-
-    // El texto se pegó pero el usuario debe pulsar Guardar manualmente.
-    return { ok: true, saved: false };
+    return {
+      ok: true,
+      saved: true,
+      note: 'Se ha importado como un equipo nuevo. Si aparece como ' +
+        '"Sin categorizar", elige el formato correcto con el menú junto al ' +
+        'nombre del equipo.',
+    };
   }
 
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {

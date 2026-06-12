@@ -36,9 +36,11 @@ en **construir equipos**, y convive perfectamente con Showdex.
    - **Fuente ↗** abre la página original (hilo de Smogon / PokePaste) donde
      se verificó el equipo.
    - **Copiar** copia el equipo en formato export al portapapeles.
-   - **Importar a Showdown** intenta pegarlo automáticamente en el diálogo
-     "Import/Export" del Teambuilder (ver limitaciones más abajo). Si no lo
-     consigue, copia el equipo y te avisa para que lo pegues a mano.
+   - **Importar a Showdown** crea automáticamente un equipo nuevo en el
+     Teambuilder y le pega el set completo (ver limitaciones más abajo).
+     Después solo tienes que asignarle el formato correcto con el
+     desplegable junto al nombre. Si algún paso falla, copia el equipo y te
+     avisa para que lo pegues a mano.
 
 Tu formato favorito se recuerda entre sesiones (`chrome.storage.local`).
 
@@ -171,15 +173,28 @@ El content script solo se ejecuta en `https://play.pokemonshowdown.com/*`
 
 ## ⚠️ Limitaciones / partes "best-effort"
 
-- **Importar a Showdown** depende de encontrar el botón "Import/Export" y el
-  `<textarea>` del Teambuilder en el DOM de Showdown. Como Showdown es una SPA
-  que cambia de versión periódicamente, esto puede romperse. Todos los
-  selectores están centralizados en `src/shared/selectors.js` como **listas de
-  candidatos** — si deja de funcionar, normalmente basta con añadir/ajustar un
-  selector ahí.
-  - Si no se encuentra el textarea o el botón de guardar, la extensión hace
-    **fallback automático**: copia el equipo al portapapeles y te indica que
-    lo pegues manualmente en "Import/Export → Guardar".
+- **Importar a Showdown**: como el Teambuilder no tiene un diálogo
+  "Import/Export" por equipo en la pantalla de lista, la extensión automatiza
+  los pasos equivalentes a hacerlo a mano:
+  1. Pulsa el botón **"New team"** del Teambuilder (crea un equipo vacío al
+     principio de la lista).
+  2. Abre el editor de ese equipo nuevo.
+  3. Cambia a la pestaña **"Import/Export"**.
+  4. Pega el equipo en el `<textarea>`, que se autoguarda al disparar el
+     evento `input` (Showdown no tiene botón "Guardar" en esa pestaña).
+
+  El equipo nuevo se crea **"Sin categorizar"** (formato `gen9`); tras
+  importarlo, usa el desplegable junto al nombre del equipo para asignarle el
+  formato correcto (p. ej. "Gen 9 OU").
+
+  Esto requiere que la pestaña activa sea `play.pokemonshowdown.com` y que
+  tengas el Teambuilder abierto. Como Showdown es una SPA (Preact) que cambia
+  de versión periódicamente, esto puede romperse. Todos los selectores están
+  centralizados en `src/shared/selectors.js` como **listas de candidatos** —
+  si deja de funcionar, normalmente basta con añadir/ajustar un selector ahí.
+  - Si falla cualquier paso (botón "New team", enlace al equipo, pestaña
+    "Import/Export" o textarea), la extensión hace **fallback automático**:
+    copia el equipo al portapapeles y te indica que lo pegues manualmente.
 - **Sprites**: se usa `https://play.pokemonshowdown.com/sprites/dex/<id>.png`
   con fallback a `https://play.pokemonshowdown.com/sprites/gen5/<id>.png` y,
   si ambos fallan, el icono local de la extensión.
