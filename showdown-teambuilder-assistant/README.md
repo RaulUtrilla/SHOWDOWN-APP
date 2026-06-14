@@ -27,10 +27,17 @@ en **construir equipos**, y convive perfectamente con Showdex.
 1. Abre `https://play.pokemonshowdown.com` y entra en el **Teambuilder**.
 2. Abre el side panel de la extensión (icono en la barra de herramientas).
 3. Elige un **formato** (Gen 9 OU, Ubers, UU, RU, NU, PU, LC, Monotype,
-   Doubles OU, National Dex, o "Todos los formatos").
+   Doubles OU, National Dex, AG/Anything Goes, o "Todos los formatos"). El
+   desplegable muestra cuántos equipos hay disponibles en cada formato.
 4. Usa el buscador para filtrar por **especie, autor o arquetipo** (p. ej.
-   escribe "Kingambit" para ver equipos que lo incluyan).
-5. En cada equipo:
+   escribe "Kingambit" para ver equipos que lo incluyan), o pulsa una de las
+   **etiquetas** (chips) que aparecen debajo para filtrar por arquetipo
+   (p. ej. "balance", "hazard stack", "sun"). Pulsa la etiqueta otra vez para
+   quitar el filtro.
+5. Pulsa la **★** de un equipo para marcarlo como favorito. Activa
+   "★ Solo favoritos" para ver solo esos equipos (se recuerdan entre
+   sesiones).
+6. En cada equipo:
    - **Ver set ▼** despliega los 6 sets completos (item, ability, Tera type,
      EVs/IVs, naturaleza, movimientos).
    - **Fuente ↗** abre la página original (hilo de Smogon / PokePaste) donde
@@ -42,7 +49,8 @@ en **construir equipos**, y convive perfectamente con Showdex.
      desplegable junto al nombre. Si algún paso falla, copia el equipo y te
      avisa para que lo pegues a mano.
 
-Tu formato favorito se recuerda entre sesiones (`chrome.storage.local`).
+Tu formato favorito y tus equipos favoritos se recuerdan entre sesiones
+(`chrome.storage.local`).
 
 ---
 
@@ -113,7 +121,8 @@ en el formato de texto estándar de Showdown a partir de los datos
 estructurados (ya validados). Para regenerar/ampliar `data/teams.json`:
 
 ```sh
-for fmt in gen9ou gen9uu gen9ru gen9nu gen9monotype gen9doublesou gen9nationaldex; do
+for fmt in gen9ou gen9uu gen9ru gen9nu gen9pu gen9lc gen9monotype gen9doublesou \
+           gen9nationaldex gen9anythinggoes; do
   curl -s -o "/tmp/${fmt}.json" \
     "https://raw.githubusercontent.com/pkmn/smogon/main/data/teams/${fmt}.json"
 done

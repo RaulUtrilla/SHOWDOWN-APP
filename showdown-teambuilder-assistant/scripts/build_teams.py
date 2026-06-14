@@ -37,6 +37,7 @@ SOURCE_URL = {
     "gen9nationaldex": "https://data.pkmn.cc/teams/gen9nationaldex.json",
     "gen9lc": "https://data.pkmn.cc/teams/gen9lc.json",
     "gen9pu": "https://data.pkmn.cc/teams/gen9pu.json",
+    "gen9anythinggoes": "https://data.pkmn.cc/teams/gen9anythinggoes.json",
 }
 
 # format -> [(index en el JSON fuente, id, descripción, tags)]
@@ -175,6 +176,20 @@ SELECTION = {
         (6, "gen9pu-skunk-hazard-stack",
          "Hazard stack de PU con Skuntank (Sucker Punch/hazards) y Sandslash-Alola como rompedores, y Florges/Milotic/Gligar/Kilowattrel de soporte.",
          ["pu", "hazard stack", "skuntank"]),
+    ],
+    "gen9anythinggoes": [
+        (0, "gen9ag-waterceus-regen-stall",
+         "Stall/balance de AG (Anything Goes) con Arceus-Water (Calm Mind + Recover) y Ho-Oh como muros especiales regenerativos, Eternatus y Ting-Lu de hazards/recuperación, y Zacian/Calyrex-Shadow como cierres.",
+         ["ag", "anything goes", "arceus", "stall"]),
+        (1, "gen9ag-encore-caly-ndm",
+         "Balance de AG con Calyrex-Shadow (Encore + Nasty Plot) como win condition especial y Necrozma-Dusk-Mane (Dragon Dance + Stone Edge) como sweeper físico, apoyados por Ting-Lu/Arceus-Water/Ho-Oh de soporte regenerativo.",
+         ["ag", "anything goes", "calyrex", "necrozma"]),
+        (3, "gen9ag-miraidon-solar-beam",
+         "Ofensiva de AG con Miraidon (Hadron Engine + Solar Beam) como wallbreaker especial, Koraidon y Necrozma-Dusk-Mane como sweepers físicos, y Arceus-Fairy/Ting-Lu poniendo Stealth Rock/Spikes.",
+         ["ag", "anything goes", "miraidon", "offense"]),
+        (6, "gen9ag-deoxys-physical-ho",
+         "Hyper offense de AG con Deoxys-Speed (Stealth Rock + Spikes + Focus Sash) abriendo paso a Zacian, Koraidon, Arceus, Arceus-Ground y Calyrex-Shadow, todos con Swords Dance o Nasty Plot.",
+         ["ag", "anything goes", "hyper offense", "deoxys"]),
     ],
 }
 

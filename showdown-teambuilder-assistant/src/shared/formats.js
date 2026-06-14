@@ -19,5 +19,6 @@
     { id: 'gen9monotype', name: 'Gen 9 Monotype' },
     { id: 'gen9doublesou', name: 'Gen 9 Doubles OU' },
     { id: 'gen9nationaldex', name: 'Gen 9 National Dex' },
+    { id: 'gen9anythinggoes', name: 'Gen 9 AG (Anything Goes)' },
   ];
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -9,11 +9,16 @@
   let TEAMS = [];
   let currentFormat = 'gen9ou';
   let searchQuery = '';
+  let activeTag = null;
+  let favOnly = false;
+  let favorites = new Set();
   const expanded = new Set();
 
   const els = {
     format: document.getElementById('tba-format'),
     search: document.getElementById('tba-search'),
+    favOnly: document.getElementById('tba-fav-only'),
+    tags: document.getElementById('tba-tags'),
     list: document.getElementById('tba-list'),
     status: document.getElementById('tba-status'),
     count: document.getElementById('tba-count'),
@@ -35,15 +40,17 @@
     populateFormats();
 
     try {
-      const stored = await chrome.storage.local.get(['favFormat']);
+      const stored = await chrome.storage.local.get(['favFormat', 'favTeams']);
       if (stored.favFormat && ALL_FORMATS.some((f) => f.id === stored.favFormat)) {
         currentFormat = stored.favFormat;
       }
+      if (Array.isArray(stored.favTeams)) favorites = new Set(stored.favTeams);
     } catch (_) {}
     els.format.value = currentFormat;
 
     els.format.addEventListener('change', () => {
       currentFormat = els.format.value;
+      activeTag = null;
       try { chrome.storage.local.set({ favFormat: currentFormat }); } catch (_) {}
       render();
     });
@@ -51,8 +58,13 @@
       searchQuery = els.search.value.trim().toLowerCase();
       render();
     });
+    els.favOnly.addEventListener('change', () => {
+      favOnly = els.favOnly.checked;
+      render();
+    });
 
     await loadTeams();
+    updateFormatCounts();
     render();
   }
 
@@ -62,8 +74,25 @@
       const opt = document.createElement('option');
       opt.value = f.id;
       opt.textContent = f.name;
+      opt.dataset.baseName = f.name;
       els.format.appendChild(opt);
     }
+  }
+
+  function updateFormatCounts() {
+    for (const opt of els.format.options) {
+      const count = opt.value === 'all'
+        ? TEAMS.length
+        : TEAMS.filter((t) => t.format === opt.value).length;
+      opt.textContent = `${opt.dataset.baseName} (${count})`;
+    }
+  }
+
+  function toggleFavorite(id) {
+    if (favorites.has(id)) favorites.delete(id);
+    else favorites.add(id);
+    try { chrome.storage.local.set({ favTeams: [...favorites] }); } catch (_) {}
+    render();
   }
 
   async function loadTeams() {
@@ -94,9 +123,12 @@
 
   // ── Render ──────────────────────────────────────────────────────────────
   function render() {
-    const filtered = TEAMS.filter((t) =>
-      (currentFormat === 'all' || t.format === currentFormat) && matchesSearch(t, searchQuery)
-    );
+    const inFormat = TEAMS.filter((t) => currentFormat === 'all' || t.format === currentFormat);
+    renderTags(inFormat);
+
+    let filtered = inFormat.filter((t) => matchesSearch(t, searchQuery));
+    if (activeTag) filtered = filtered.filter((t) => (t.tags || []).includes(activeTag));
+    if (favOnly) filtered = filtered.filter((t) => favorites.has(t.id));
 
     els.count.textContent = filtered.length + ' equipo' + (filtered.length === 1 ? '' : 's');
     els.list.innerHTML = '';
@@ -104,9 +136,11 @@
     if (!filtered.length) {
       const empty = document.createElement('div');
       empty.className = 'tba-empty';
-      empty.innerHTML = TEAMS.length
-        ? 'No hay equipos para este filtro todavía.<br>Añade más en <code>data/teams.json</code>.'
-        : 'No se han podido cargar equipos. Revisa <code>data/teams.json</code>.';
+      empty.innerHTML = favOnly
+        ? 'No tienes equipos favoritos para este filtro.<br>Pulsa la ★ de un equipo para guardarlo aquí.'
+        : TEAMS.length
+          ? 'No hay equipos para este filtro todavía.<br>Añade más en <code>data/teams.json</code>.'
+          : 'No se han podido cargar equipos. Revisa <code>data/teams.json</code>.';
       els.list.appendChild(empty);
       return;
     }
@@ -114,21 +148,45 @@
     for (const team of filtered) els.list.appendChild(renderCard(team));
   }
 
+  function renderTags(teams) {
+    const tagSet = new Set();
+    for (const t of teams) for (const tag of t.tags || []) tagSet.add(tag);
+
+    els.tags.innerHTML = '';
+    if (!tagSet.size) return;
+
+    if (activeTag && !tagSet.has(activeTag)) activeTag = null;
+
+    for (const tag of [...tagSet].sort()) {
+      const chip = document.createElement('button');
+      chip.className = 'tba-tag-chip' + (activeTag === tag ? ' active' : '');
+      chip.textContent = tag;
+      chip.addEventListener('click', () => {
+        activeTag = activeTag === tag ? null : tag;
+        render();
+      });
+      els.tags.appendChild(chip);
+    }
+  }
+
   function renderCard(team) {
     const card = document.createElement('section');
     card.className = 'tba-card';
     const isExpanded = expanded.has(team.id);
+    const isFav = favorites.has(team.id);
 
     const header = document.createElement('div');
     header.className = 'tba-card-header';
     header.innerHTML = `
       <div class="tba-card-title">
+        <button class="tba-fav-star${isFav ? ' active' : ''}" type="button" title="Marcar como favorito" aria-label="Favorito">${isFav ? '★' : '☆'}</button>
         <strong>${escapeHtml(team.name)}</strong>
         <span class="tba-card-format">${escapeHtml(formatName(team.format))}</span>
       </div>
       <div class="tba-card-meta">${escapeHtml(team.author || '')}</div>
       ${team.description ? `<div class="tba-card-desc">${escapeHtml(team.description)}</div>` : ''}
     `;
+    header.querySelector('.tba-fav-star').addEventListener('click', () => toggleFavorite(team.id));
     card.appendChild(header);
 
     const sprites = document.createElement('div');

@@ -550,5 +550,65 @@
       "skuntank"
     ],
     "export": "Skuntank (M) @ Rocky Helmet\nAbility: Aftermath\nTera Type: Dark\nEVs: 152 HP / 192 Atk / 60 SpD / 104 Spe\nAdamant Nature\n- Gunk Shot\n- Knock Off\n- Sucker Punch\n- Taunt\n\nFlorges @ Heavy-Duty Boots\nAbility: Flower Veil\nTera Type: Poison\nEVs: 248 HP / 204 Def / 56 Spe\nBold Nature\n- Calm Mind\n- Moonblast\n- Synthesis\n- Wish\n\nGligar (M) @ Eviolite\nAbility: Immunity\nTera Type: Ghost\nEVs: 252 HP / 156 Def / 100 SpD\nImpish Nature\n- Earthquake\n- Stealth Rock\n- Toxic\n- U-turn\n\nKilowattrel (M) @ Heavy-Duty Boots\nAbility: Competitive\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Hurricane\n- Roost\n- Thunderbolt\n- U-turn\n\nMilotic (M) @ Heavy-Duty Boots\nAbility: Marvel Scale\nTera Type: Dragon\nEVs: 252 HP / 236 Def / 8 SpD / 12 Spe\nCalm Nature\n- Dragon Tail\n- Ice Beam\n- Recover\n- Scald\n\nSandslash-Alola (M) @ Leftovers\nAbility: Slush Rush\nTera Type: Ghost\nEVs: 252 HP / 204 SpD / 52 Spe\nCareful Nature\n- Ice Spinner\n- Knock Off\n- Rapid Spin\n- Spikes"
+  },
+  {
+    "id": "gen9ag-waterceus-regen-stall",
+    "format": "gen9anythinggoes",
+    "name": "waterceus",
+    "author": "PrimalKyogre555",
+    "source": "https://data.pkmn.cc/teams/gen9anythinggoes.json",
+    "description": "Stall/balance de AG (Anything Goes) con Arceus-Water (Calm Mind + Recover) y Ho-Oh como muros especiales regenerativos, Eternatus y Ting-Lu de hazards/recuperación, y Zacian/Calyrex-Shadow como cierres.",
+    "tags": [
+      "ag",
+      "anything goes",
+      "arceus",
+      "stall"
+    ],
+    "export": "Eternatus @ Heavy-Duty Boots\nAbility: Pressure\nTera Type: Steel\nEVs: 252 HP / 212 SpD / 44 Spe\nCalm Nature\n- Dynamax Cannon\n- Recover\n- Toxic\n- Toxic Spikes\n\nArceus-Water @ Splash Plate\nAbility: Multitype\nTera Type: Poison\nEVs: 236 HP / 252 Def / 20 Spe\nBold Nature\n- Calm Mind\n- Judgment\n- Recover\n- Will-O-Wisp\n\nCalyrex-Shadow @ Choice Scarf\nAbility: As One (Spectrier)\nTera Type: Ghost\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Astral Barrage\n- Baton Pass\n- Grass Knot\n- Trick\n\nHo-Oh @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Fairy\nEVs: 208 HP / 212 Atk / 28 Def / 60 Spe\nAdamant Nature\n- Brave Bird\n- Earthquake\n- Recover\n- Sacred Fire\n\nTing-Lu @ Leftovers\nAbility: Vessel of Ruin\nTera Type: Grass\nEVs: 252 HP / 252 SpD / 4 Spe\nCareful Nature\n- Earthquake\n- Ruination\n- Spikes\n- Whirlwind\n\nZacian @ Rusted Sword\nAbility: Intrepid Sword\nTera Type: Dark\nEVs: 140 HP / 216 Atk / 152 Spe\nJolly Nature\n- Crunch\n- Play Rough\n- Swords Dance\n- Wild Charge"
+  },
+  {
+    "id": "gen9ag-encore-caly-ndm",
+    "format": "gen9anythinggoes",
+    "name": "Encore Caly  + Stone Edge NDM",
+    "author": "TaxFraud094",
+    "source": "https://data.pkmn.cc/teams/gen9anythinggoes.json",
+    "description": "Balance de AG con Calyrex-Shadow (Encore + Nasty Plot) como win condition especial y Necrozma-Dusk-Mane (Dragon Dance + Stone Edge) como sweeper físico, apoyados por Ting-Lu/Arceus-Water/Ho-Oh de soporte regenerativo.",
+    "tags": [
+      "ag",
+      "anything goes",
+      "calyrex",
+      "necrozma"
+    ],
+    "export": "Ting-Lu @ Leftovers\nAbility: Vessel of Ruin\nTera Type: Poison\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Earthquake\n- Ruination\n- Spikes\n- Whirlwind\n\nArceus-Water @ Splash Plate\nAbility: Multitype\nTera Type: Fairy\nEVs: 248 HP / 240 Def / 20 Spe\nBold Nature\n- Judgment\n- Recover\n- Stealth Rock\n- Will-O-Wisp\n\nCalyrex-Shadow @ Heavy-Duty Boots\nAbility: As One (Spectrier)\nTera Type: Stellar\nEVs: 4 Def / 252 SpA / 252 Spe\nTimid Nature\n- Astral Barrage\n- Encore\n- Grass Knot\n- Nasty Plot\n\nHo-Oh @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Ground\nEVs: 208 HP / 212 Atk / 28 Def / 60 Spe\nAdamant Nature\n- Brave Bird\n- Earthquake\n- Recover\n- Sacred Fire\n\nKoraidon @ Choice Scarf\nAbility: Orichalcum Pulse\nTera Type: Fire\nEVs: 252 Atk / 4 SpD / 252 Spe\nAdamant Nature\n- Flare Blitz\n- Low Kick\n- Outrage\n- U-turn\n\nNecrozma-Dusk-Mane @ Heavy-Duty Boots\nAbility: Prism Armor\nTera Type: Steel\nEVs: 200 HP / 160 Atk / 8 Def / 4 SpD / 136 Spe\nAdamant Nature\n- Dragon Dance\n- Moonlight\n- Stone Edge\n- Sunsteel Strike"
+  },
+  {
+    "id": "gen9ag-miraidon-solar-beam",
+    "format": "gen9anythinggoes",
+    "name": "#1 Gen 9 AG Solar Beam",
+    "author": "PrimalKyogre555",
+    "source": "https://data.pkmn.cc/teams/gen9anythinggoes.json",
+    "description": "Ofensiva de AG con Miraidon (Hadron Engine + Solar Beam) como wallbreaker especial, Koraidon y Necrozma-Dusk-Mane como sweepers físicos, y Arceus-Fairy/Ting-Lu poniendo Stealth Rock/Spikes.",
+    "tags": [
+      "ag",
+      "anything goes",
+      "miraidon",
+      "offense"
+    ],
+    "export": "Miraidon @ Life Orb\nAbility: Hadron Engine\nTera Type: Grass\nEVs: 112 HP / 48 Def / 252 SpA / 96 Spe\nModest Nature\n- Agility\n- Dragon Pulse\n- Electro Drift\n- Solar Beam\n\nArceus-Fairy @ Pixie Plate\nAbility: Multitype\nTera Type: Poison\nEVs: 248 HP / 156 Def / 76 SpD / 28 Spe\nBold Nature\n- Judgment\n- Recover\n- Stealth Rock\n- Thunder Wave\n\nHo-Oh @ Heavy-Duty Boots\nAbility: Regenerator\nTera Type: Ground\nEVs: 244 HP / 200 Atk / 16 Def / 48 Spe\nAdamant Nature\n- Brave Bird\n- Earthquake\n- Recover\n- Sacred Fire\n\nKoraidon @ Choice Scarf\nAbility: Orichalcum Pulse\nTera Type: Ghost\nEVs: 56 HP / 252 Atk / 12 Def / 188 Spe\nAdamant Nature\n- Flare Blitz\n- Low Kick\n- Outrage\n- U-turn\n\nNecrozma-Dusk-Mane @ Heavy-Duty Boots\nAbility: Prism Armor\nTera Type: Dark\nEVs: 252 HP / 136 Def / 120 Spe\nImpish Nature\n- Dragon Dance\n- Knock Off\n- Moonlight\n- Sunsteel Strike\n\nTing-Lu @ Leftovers\nAbility: Vessel of Ruin\nTera Type: Poison\nEVs: 212 HP / 8 Def / 252 SpD / 36 Spe\nCareful Nature\n- Payback\n- Ruination\n- Spikes\n- Whirlwind"
+  },
+  {
+    "id": "gen9ag-deoxys-physical-ho",
+    "format": "gen9anythinggoes",
+    "name": "Deoxys-S Physical Spam HO",
+    "author": "first snows",
+    "source": "https://data.pkmn.cc/teams/gen9anythinggoes.json",
+    "description": "Hyper offense de AG con Deoxys-Speed (Stealth Rock + Spikes + Focus Sash) abriendo paso a Zacian, Koraidon, Arceus, Arceus-Ground y Calyrex-Shadow, todos con Swords Dance o Nasty Plot.",
+    "tags": [
+      "ag",
+      "anything goes",
+      "hyper offense",
+      "deoxys"
+    ],
+    "export": "Deoxys-Speed @ Focus Sash\nAbility: Pressure\nTera Type: Fairy\nEVs: 248 HP / 64 Atk / 180 Def / 16 Spe\nJolly Nature\n- Knock Off\n- Spikes\n- Stealth Rock\n- Taunt\n\nArceus @ Lum Berry\nAbility: Multitype\nTera Type: Normal\nEVs: 20 HP / 252 Atk / 8 Def / 56 SpD / 172 Spe\nAdamant Nature\n- Extreme Speed\n- Shadow Claw\n- Swords Dance\n- Taunt\n\nArceus-Ground @ Earth Plate\nAbility: Multitype\nTera Type: Fire\nEVs: 252 Atk / 4 Def / 252 Spe\nAdamant Nature\n- Dragon Dance\n- Earthquake\n- Stone Edge\n- Taunt\n\nCalyrex-Shadow @ Life Orb\nAbility: As One (Spectrier)\nTera Type: Normal\nEVs: 4 Def / 252 SpA / 252 Spe\nTimid Nature\n- Astral Barrage\n- Grass Knot\n- Nasty Plot\n- Psyshock\n\nKoraidon @ Loaded Dice\nAbility: Orichalcum Pulse\nTera Type: Ghost\nEVs: 4 HP / 252 Atk / 252 Spe\nJolly Nature\n- Flare Blitz\n- Low Kick\n- Scale Shot\n- Swords Dance\n\nZacian @ Rusted Sword\nAbility: Intrepid Sword\nTera Type: Fighting\nEVs: 24 HP / 252 Atk / 72 SpD / 160 Spe\nJolly Nature\n- Close Combat\n- Play Rough\n- Swords Dance\n- Wild Charge"
   }
 ]
